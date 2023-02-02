@@ -1,0 +1,2911 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Điều khoản & Điều kiện sử dụng - Monex</title>
+    <script>
+      let metaOgUrl = document.createElement("meta");
+      metaOgUrl.setAttribute("property", "og:url");
+      metaOgUrl.content = document.location;
+      document.getElementsByTagName("head")[0].appendChild(metaOgUrl);
+    </script>
+    <link rel="stylesheet" href="./stylesheets/css/dieu-khoan-dich-vu.css" />
+  </head>
+  <body>
+    <!--  Modal  -->
+
+    <!--  Modal noti success -->
+    <div
+      class="modal"
+      id="myModal-receive-email-success"
+      data-backdrop="keyboard"
+      role="dialog"
+      tabindex="-1"
+      aria-labelledby="myModalLabel-04"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="receive-email-noti-success">
+            <div class="receive-email-modal-content">
+              <div class="receive-email-modal-checkmark">
+                <img src="./images/icon/noti-success.svg" alt="" />
+              </div>
+              <div class="receive-email-content-title">
+                <span>Thành công</span>
+              </div>
+              <div class="receive-email-content-desc">
+                <span>Đăng ký nhận thông báo thành công.</span>
+              </div>
+            </div>
+            <div class="receive-email-modal-submit" data-bs-dismiss="modal">
+              <a href="javascript:void(0)">Xác nhận</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  End Modal noti success -->
+
+    <!--  Modal noti fail -->
+    <div
+      class="modal"
+      id="myModal-receive-email-fail"
+      data-backdrop="keyboard"
+      role="dialog"
+      tabindex="-1"
+      aria-labelledby="myModalLabel-03"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="receive-email-noti-fail">
+            <div class="receive-email-modal-content">
+              <div class="receive-email-modal-checkmark">
+                <img src="./images/icon/noti-fail.svg" alt="" />
+              </div>
+              <div class="receive-email-content-title">
+                <span>Thất bại</span>
+              </div>
+              <div class="receive-email-content-desc">
+                <span>Đăng kí nhận thông báo thất bại. Vui lòng thử lại.</span>
+              </div>
+            </div>
+            <div class="receive-email-modal-submit" data-bs-dismiss="modal">
+              <a href="javascript:void(0)">Xác nhận</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="email-fail"
+      data-backdrop="keyboard"
+      role="dialog"
+      tabindex="-1"
+      aria-labelledby="myModalLabel-02"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="receive-email-noti-fail">
+            <div class="receive-email-modal-content">
+              <div class="receive-email-modal-checkmark">
+                <img src="./images/icon/noti-fail.svg" alt="" />
+              </div>
+              <div class="receive-email-content-title">
+                <span>Thất bại</span>
+              </div>
+              <div class="receive-email-content-desc">
+                <span>Vui lòng nhập đúng định dạng email.</span>
+              </div>
+            </div>
+            <div class="receive-email-modal-submit" data-bs-dismiss="modal">
+              <a href="javascript:void(0)">Xác nhận</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  End Modal noti fail -->
+
+    <!--  Modal download  -->
+    <div
+      class="modal"
+      id="myModal"
+      data-backdrop="keyboard"
+      role="dialog"
+      tabindex="-1"
+      aria-labelledby="myModalLabel-01"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-c-tabs">
+            <div class="modal-header">
+              <div class="modal-header-title">
+                <div class="btn-download">
+                  <img src="./images/icon/modal-download-icon.svg" alt="" />
+                </div>
+                <span class="modal-title">Tải ứng dụng Monex</span>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+            </div>
+            <div class="modal-body-content">
+              <div class="modal-body-left">
+                <div class="modal-content-title">
+                  <span>Quét mã QR để tải ứng dụng Monex</span>
+                </div>
+                <div class="modal-content-qr">
+                  <img src="./images/footers/qrcode-app.png" alt="" />
+                </div>
+              </div>
+              <div class="modal-body-right">
+                <div class="modal-content-mobile">
+                  <div class="modal-mobile-title">
+                    <span>Vui lòng chọn nền tảng bạn đang sử dụng</span>
+                  </div>
+                </div>
+                <div class="modal-content-title">
+                  <span>hoặc xem trực tiếp tại</span>
+                </div>
+                <div class="modal-content-store">
+                  <a
+                    class="modal-store-icon"
+                    href="https://apps.apple.com/app/monex/id1548427331"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img src="images/illustrator/appstore-illu.png" alt="" />
+                  </a>
+                  <a
+                    class="modal-store-icon"
+                    href="https://play.google.com/store/apps/details?id=com.epayvn.monex"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img src="images/illustrator/ggplay-illu.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  End Modal -->
+
+    <!--  Header -->
+    <div id="m-header">
+      <div class="container-fluid p-0">
+        <header>
+          <!-- Nav sidebar  -->
+          <div
+            id="btn-toggler-small"
+            class="bs-canvas bs-canvas-anim bs-canvas-left position-fixed h-100"
+            data-overlay="false"
+            data-width="100%"
+          >
+            <header class="bs-canvas-header overflow-auto">
+              <button
+                type="button"
+                class="bs-canvas-close float-left close"
+                aria-label="Close"
+              >
+                <img
+                  src="./images/header/Dismiss.svg"
+                  alt="dismiss-header"
+                  id="dismiss-header"
+                />
+              </button>
+              <a href="/"
+                ><img
+                  src="./images/header/logo-monex.svg"
+                  alt="logo-text-header"
+                  class="logo-header"
+                />
+              </a>
+            </header>
+            <div class="bs-canvas-content">
+              <nav class="navbar p-0">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://home.monex.vn/gioi-thieu/"
+                    >
+                      <h6 class="mb-0">Về monex</h6>
+                      <span>
+                        <img src="images/icon/arrow-right.svg" alt="redirect" />
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">
+                      <h6 class="mb-0">Mua sắm</h6>
+                      <span>
+                        <img src="images/icon/arrow-right.svg" alt="redirect" />
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="hop-tac.html">
+                      <h6 class="mb-0">Hợp tác</h6>
+                      <span>
+                        <img src="images/icon/arrow-right.svg" alt="redirect" />
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link sidebar-dropdown"
+                      href="javascript:void(0)"
+                    >
+                      <h6 class="mb-0">Tin tức</h6>
+                      <span>
+                        <img
+                          src="images/icon/chevron-down.svg"
+                          alt="redirect"
+                        />
+                      </span>
+                    </a>
+                    <ul
+                      class="sidebar-dropdown-menu"
+                      aria-labelledby="tin-tuc-dropdown-sidebar"
+                    >
+                      <li class="sidebar-dropdown-item">
+                        <a href="https://home.monex.vn/tin-tuc/ban-tin-monex/">
+                          <span> Bản tin Monex</span>
+                          <span>
+                            <img
+                              src="images/icon/arrow-right.svg"
+                              alt="redirect"
+                            /> </span
+                        ></a>
+                      </li>
+                      <li class="sidebar-dropdown-item">
+                        <a
+                          href="https://home.monex.vn/tin-tuc/chuyen-nha-monex/"
+                        >
+                          <span>Chuyện nhà Monex </span
+                          ><span>
+                            <img
+                              src="images/icon/arrow-right.svg"
+                              alt="redirect"
+                            /> </span
+                        ></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://home.monex.vn/hoi-dap/">
+                      <h6 class="mb-0">Hỏi đáp</h6>
+                      <span>
+                        <img src="images/icon/arrow-right.svg" alt="redirect" />
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link sidebar-dropdown"
+                      href="javascript:void(0)"
+                      id="tin-tuc-dropdown-sidebar"
+                    >
+                      <h6 class="sidebar-dropdown-toggle mb-0">Blog</h6>
+                      <span>
+                        <img
+                          src="images/icon/chevron-down.svg"
+                          alt="redirect"
+                        />
+                      </span>
+                    </a>
+                    <ul
+                      class="sidebar-dropdown-menu"
+                      aria-labelledby="tin-tuc-dropdown-sidebar"
+                    >
+                      <li class="sidebar-dropdown-item">
+                        <a
+                          href="https://home.monex.vn/blog/chuyen-dong-thi-truong/"
+                        >
+                          <span>Chuyển động thị trường</span
+                          ><span>
+                            <img
+                              src="images/icon/arrow-right.svg"
+                              alt="redirect"
+                            /> </span
+                        ></a>
+                      </li>
+                      <li class="sidebar-dropdown-item">
+                        <a
+                          href="https://home.monex.vn/blog/xu-huong-dau-tu-cho-ban/"
+                        >
+                          <span>Xu hướng đầu tư cho bạn</span>
+                          <span>
+                            <img
+                              src="images/icon/arrow-right.svg"
+                              alt="redirect"
+                            /> </span
+                        ></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <!--  Header menu    -->
+          <nav class="navbar-light bg-custom sticky-top" role="navigation">
+            <div class="container-fluid">
+              <div class="row menu">
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 menu-brand d-flex align-items-center"
+                >
+                  <div class="menu-toggler-small d-flex align-items-center">
+                    <button
+                      class="bs-offset-main bs-canvas-anim navbar-toggler"
+                      data-toggle="canvas"
+                      data-target="#btn-toggler-small"
+                      aria-expanded="false"
+                      aria-controls="btn-toggler-small"
+                    >
+                      <img src="./images/header/Menu.svg" alt="icon-toggler" />
+                    </button>
+                  </div>
+                  <a href="/"
+                    ><img
+                      src="./images/header/logo-monex.svg"
+                      alt="logo-text-header"
+                      class="logo-header"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 menu-list"
+                >
+                  <ul
+                    class="nav navbar-nav gap-2 flex-row flex-nowrap align-items-center"
+                  >
+                    <li class="nav-item">
+                      <a
+                        href="https://home.monex.vn/gioi-thieu/"
+                        class="nav-link"
+                        title="Giới thiệu"
+                      >
+                        <h6>Về monex</h6>
+                      </a>
+                      <div class="underline"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="https://home.monex.vn/gioi-thieu/"
+                        class="nav-link"
+                        title="Mua sắm"
+                      >
+                        <h6>Mua sắm</h6>
+                      </a>
+                      <div class="underline"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="hop-tac.html"
+                        class="nav-link"
+                        title="Hợp tác"
+                      >
+                        <h6>Hợp tác</h6>
+                      </a>
+                      <div class="underline"></div>
+                    </li>
+                    <li class="nav-item dropdown" id="tin-tuc-dropdown">
+                      <a
+                        href="javascript:void(0)"
+                        class="nav-link"
+                        title="Tin tức"
+                      >
+                        <h6 class="dropdown-toggle">
+                          Tin tức<span>
+                            <img
+                              src="images/icon/chevron-down.svg"
+                              alt="redirect"
+                              class="chevron-header"
+                            />
+                          </span>
+                        </h6>
+                      </a>
+                      <div class="underline"></div>
+                      <ul
+                        class="s-dropdown-menu"
+                        aria-labelledby="tin-tuc-dropdown"
+                      >
+                        <li class="s-dropdown-item">
+                          <a href="https://home.monex.vn/tin-tuc/ban-tin-monex/"
+                            >Bản tin Monex</a
+                          >
+                        </li>
+                        <li class="s-dropdown-item">
+                          <a
+                            href="https://home.monex.vn/tin-tuc/chuyen-nha-monex/"
+                            >Chuyện nhà Monex</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="https://home.monex.vn/hoi-dap/"
+                        class="nav-link"
+                        title="Hỏi đáp"
+                      >
+                        <h6>Hỏi đáp</h6>
+                      </a>
+                      <div class="underline"></div>
+                    </li>
+                    <li class="nav-item dropdown" id="blog-dropdown">
+                      <a
+                        href="javascript:void(0)"
+                        class="nav-link"
+                        title="Tin tức"
+                      >
+                        <h6 class="dropdown-toggle">
+                          Blog
+                          <span>
+                            <img
+                              src="images/icon/chevron-down.svg"
+                              alt="redirect"
+                              class="chevron-header"
+                            />
+                          </span>
+                        </h6>
+                      </a>
+                      <div class="underline"></div>
+                      <ul
+                        class="s-dropdown-menu"
+                        aria-labelledby="blog-dropdown"
+                      >
+                        <li class="s-dropdown-item">
+                          <a
+                            href="https://home.monex.vn/blog/chuyen-dong-thi-truong/"
+                            >Chuyển động thị trường</a
+                          >
+                        </li>
+                        <li class="s-dropdown-item">
+                          <a
+                            href="https://home.monex.vn/blog/xu-huong-dau-tu-cho-ban/"
+                            >Xu hướng đầu tư cho bạn</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 menu-info d-flex justify-content-end"
+                >
+                  <ul
+                    class="nav navbar-nav flex-row flex-nowrap align-items-center float-right"
+                  >
+                    <li class="nav-item">
+                      <a
+                        href="tel:1900234583"
+                        class="nav-link contact me-3"
+                        title="Hỗ trợ"
+                        ><img
+                          src="./images/header/hotline.svg"
+                          alt="icon-contact"
+                        />
+                        <h6 class="mb-0">1900234583</h6>
+                      </a>
+                    </li>
+
+                    <li
+                      class="nav-item"
+                      data-bs-toggle="modal"
+                      data-bs-target="#myModal"
+                    >
+                      <a
+                        href="javascript:void(0)"
+                        class="nav-link header-download"
+                        title="Tải ứng dụng"
+                        ><img
+                          src="./images/header/Download.svg"
+                          alt="icon-download"
+                        />
+                        <h6 class="mb-0">Tải ứng dụng</h6>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <!-- END: Header -->
+
+    <!--    Main -->
+    <main id="m-main">
+      <div class="container-fluid">
+        <div class="m-container">
+          <!-- Information -->
+          <div class="custom-row my-5">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <h4 class="sub-title text-center">Điều khoản sử dụng</h4>
+            </div>
+          </div>
+          <div class="custom-row content">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <h6 class="content-text">
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Chào mừng bạn đến với MONEX –
+                    <i
+                      ><strong
+                        ><u>Dịch vụ mua sắm trực tuyến trả sau</u></strong
+                      ></i
+                    >
+                    <i><strong>hàng đầu Việt Nam </strong></i>(sau đây gọi tắt
+                    là <i><strong>“Dịch vụ MONEX”</strong></i
+                    >) được xây dựng và vận hành bởi CÔNG TY CỔ PHẦN MONEX (Sau
+                    đây gọi tắt là “MONEX” hoặc “Công ty”). Dịch vụ MONEX cung
+                    cấp cho bạn quyền truy cập, tìm kiếm và mua sắm trực tuyến
+                    rất nhiều mặt hàng theo phương thức trả chậm.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Bản Điều khoản sử dụng này đưa ra những nguyên tắc chung
+                    trong hoạt động của người dùng trên Dịch vụ MONEX nhằm định
+                    hướng các hoạt động của bạn được phù hợp với các quy định
+                    của pháp luật và các quy chuẩn đạo đức xã hội. Bằng cách chỉ
+                    rõ quyền và nghĩa vụ của bạn khi tham gia các hoạt động trên
+                    MONEX cũng như quyền và nghĩa vụ của MONEX đối với bạn,
+                    MONEX nỗ lực để cung cấp đến bạn một môi trường tương tác
+                    tiện ích và đảm bảo các yếu tố lành mạnh, an toàn.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Bản điều khoản sử dụng này được đăng tải công khai trên
+                    website monex.vn và/hoặc ứng dụng điện thoại MONEX và sẽ tạo
+                    thành đầy đủ thỏa thuận giữa bạn với MONEX cũng như với các
+                    người dùng khác liên quan tới các hoạt động của bạn trên
+                    website và/hoặc ứng dụng của MONEX. Khi truy cập hoặc sử
+                    dụng trang web và/hoặc ứng dụng MONEX của chúng tôi, bạn
+                    ("Người dùng") xác nhận rằng bạn đã đọc, hiểu và đồng ý
+                    <u>chịu </u>ràng buộc bởi các điều khoản sử dụng này ("Điều
+                    khoản sử dụng"), bất kể bạn có phải là thành viên đã đăng ký
+                    của Dịch vụ MONEX hay không.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Ngoài ra, bạn hiểu và chấp nhận rằng bản điều khoản sử dụng
+                    này có thể được sửa đổi, bổ sung tại bất cứ thời điểm nào
+                    bởi quyết định của MONEX mà không cần tham khảo trước ý kiến
+                    của bất cứ người dùng nào. Do đó, bằng việc xác nhận đồng ý
+                    với nội dung của bản Điều khoản sử dụng này, bạn cũng đồng ý
+                    rằng sẽ luôn luôn theo dõi các thay đổi, cập nhật, bổ sung
+                    của Bản điều khoản sử dụng này và chấp nhận ràng buộc bởi
+                    các thay đổi, cập nhật, bổ sung đó.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Trong trường hợp một hoặc một số điều khoản của thoả thuận
+                    này xung đột với các quy định của luật pháp và bị Tòa án
+                    tuyên là vô hiệu, điều khoản đó sẽ được chỉnh sửa cho phù
+                    hợp với quy định pháp luật hiện hành, và phần còn lại của
+                    thỏa thuận sử dụng vẫn giữ nguyên giá trị pháp lý.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Điều khoản sử dụng này cũng thừa nhận sự cho phép của bạn
+                    <u>trong việc</u> lấy báo cáo tín dụng và thông tin khác từ
+                    các cơ quan chức năng và các dịch vụ thông tin của bên thứ
+                    ba, <u>nhằm giúp quá trình</u> cung cấp dịch vụ cho bạn được
+                    thực hiện tốt hơn. Như được mô tả bên dưới, thông tin này có
+                    thể được sử dụng để xử lý yêu cầu của bạn, xác minh thông
+                    tin bạn cung cấp và gửi thông tin không nhận dạng cá nhân về
+                    bạn cho các <u>Nhà cung cấp</u> tiềm năng phục vụ các yêu
+                    cầu của bạn.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Ngoài các Điều khoản sử dụng này, bạn có thể tham gia vào
+                    các thỏa thuận khác với chúng tôi hoặc những người khác sẽ
+                    chi phối việc bạn sử dụng dịch vụ hoặc các dịch vụ liên quan
+                    do chúng tôi hoặc những người khác cung cấp. Nếu có bất kỳ
+                    mâu thuẫn nào giữa các Điều khoản sử dụng này và một thỏa
+                    thuận khác mà bạn áp dụng cho các khía cạnh cụ thể của dịch
+                    vụ, thỏa thuận khác sẽ được ưu tiên liên quan đến các khía
+                    cạnh cụ thể của Dịch vụ mà nó áp dụng.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>CÁC TỪ VIẾT TẮT</strong></span
+                  >
+                </p>
+                <ol>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i><strong>Điều khoản sử dụng:</strong></i> Là bản Điều
+                      khoản sử dụng này, được xây dựng để áp dụng đối với tất cả
+                      người dùng có truy cập, tham gia sử dụng Dịch vụ MONEX bao
+                      gồm cả bản sửa đổi, bổ sung, thay thế của Điều khoản sử
+                      dụng này.</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i><strong>“Người dùng” hoặc “Bạn”:</strong></i> là bất
+                      cứ người dùng nào có truy cập, sử dụng Dịch vụ MONEX bao
+                      gồm cả Khách hàng và <u>Nhà cung cấp</u>.</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i><strong>Khách hàng:</strong></i> Là cá nhân người Việt
+                      Nam truy cập, sử dụng Dịch vụ MONEX nhằm mục đích mua các
+                      sản phẩm/dịch vụ để đáp ứng nhu cầu mua sắm của
+                      mình.</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        ><strong><u>Nhà cung cấp:</u></strong></i
+                      ><u>
+                        Là tổ chức/cá nhân người Việt Nam truy cập, sử dụng Dịch
+                        vụ MONEX nhằm mục đích tìm kiếm Khách hàng để bán các
+                        sản phẩm/dịch vụ của mình cho Khách hàng phù hợp với
+                        chính sách của MONEX và quy định của pháp luật liên
+                        quan. Nhà cung cấp sản phẩm/dịch vụ trong một số trường
+                        hợp có thể là chính MONEX.</u
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><strong><u>Sản phẩm:</u></strong
+                      ><u>
+                        Là các hàng hóa/dịch vụ do Nhà cung cấp sản phẩm/dịch vụ
+                        được bán trên Dịch vụ MONEX phù hợp với chính sách của
+                        MONEX và quy định của pháp luật liên quan.</u
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i><strong>Pháp luật:</strong></i> Là các quy định pháp
+                      luật của nước Cộng hòa Xã hội Chủ nghĩa Việt Nam.</span
+                    ><span
+                      style="font-family: Arial, sans-serif; font-size: 11pt"
+                      >&nbsp;&nbsp;&nbsp;&nbsp;</span
+                    >
+                  </li>
+                </ol>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>QUY ĐỊNH CẤM</strong></span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Khi tham gia hoạt động, sử dụng Dịch vụ MONEX, bạn không
+                    được truyền đưa, thực hiện bất cứ hành vi nào vi phạm các
+                    quy định của Luật An toàn thông tin mạng, Luật An ninh mạng,
+                    Luật Công nghệ thông tin, Luật Viễn thông, Luật Sở hữu trí
+                    tuệ, Nghị định 72/2013/NĐ-CP, các văn bản sửa đổi, bổ sung,
+                    thay thế các văn bản nêu trên và/hoặc bất cứ văn bản pháp
+                    luật nào của Việt Nam có liên quan và Điều khoản sử dụng của
+                    chúng tôi, bao gồm nhưng không hạn chế việc không được
+                    truyền đưa các nội dung, thực hiện các hành vi được liệt kê
+                    dưới đây:</span
+                  >
+                </p>
+                <ol style="list-style-type: upper-alpha">
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><strong
+                        >Các nội dung cấm truyền đưa trên hệ thống Dịch vụ của
+                        MONEX</strong
+                      ></span
+                    >
+                  </li>
+                </ol>
+                <ol style="list-style-type: lower-alpha">
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Các nội dung mang tính chống lại Nhà nước Cộng hòa xã hội
+                      chủ nghĩa Việt Nam; chia rẽ chính trị, gây phương hại đến
+                      an ninh quốc gia, trật tự an toàn xã hội; phá hoại khối
+                      đại đoàn kết dân tộc; tuyên truyền chiến tranh, khủng bố;
+                      gây hận thù, mâu thuẫn giữa các dân tộc, sắc tộc, tôn
+                      giáo;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Các nội dung tiết lộ bí mật nhà nước, bí mật quân sự, an
+                      ninh, kinh tế, đối ngoại và những bí mật khác do pháp luật
+                      quy định;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Các nội dung xuyên tạc, vu khống, bôi nhọ, nói xấu, xúc
+                      phạm uy tín hoặc xâm hại quyền và lợi ích của tổ chức, cá
+                      nhân khác dưới bất cứ phương diện nào, bao gồm nhưng không
+                      hạn chế bởi các lợi ích về kinh tế, quyền về sử dụng hình
+                      ảnh, các tổn hại về danh dự, nhân phẩm và các tổn hại tinh
+                      thần khác;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Các nội dung mang tính tuyên truyền, kích động bạo lực,
+                      dâm ô, đồi trụy, tội ác, tệ nạn xã hội, mê tín dị đoan,
+                      phá hoại thuần phong, mỹ tục của dân tộc;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Các nội dung thuộc đối tượng bị cơ quan nhà nước có thẩm
+                      quyền cấm lưu hành hoặc các tác phẩm vi phạm bản quyền tác
+                      giả hoặc quyền khai thác của tổ chức/cá nhân khác;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Các nội dung vi phạm điều cấm khác của pháp luật.</span
+                    >
+                  </li>
+                </ol>
+                <ol style="list-style-type: upper-alpha" start="2">
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><strong
+                        >Các hành vi bị cấm thực hiện trên Dịch vụ MONEX</strong
+                      ></span
+                    >
+                  </li>
+                </ol>
+                <ol style="list-style-type: lower-alpha">
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Mạo nhận người khác khi sử dụng Dịch vụ MONEX, thu thập
+                      thông tin hoặc tự ý truy cập vào tài khoản của người dùng
+                      khác trên Dịch vụ MONEX mà chưa được sự đồng ý của MONEX
+                      (trừ trường hợp cơ quan nhà nước thu thập hoặc truy cập
+                      vào tài khoản bạn để điều tra, xử lý các hành vi vi
+                      phạm);</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Đăng tải lên Dịch vụ MONEX các nội dung có chứa tệp tin
+                      virus hoặc các đoạn mã độc hại khác hoặc đăng tải các tệp
+                      tin virus hoặc các đoạn mã độc hại khác một cách độc lập
+                      dù chúng gây ảnh hưởng đến hoạt động bình thường của hệ
+                      thống Dịch vụ MONEX hoặc xâm nhập vào thiết bị truy cập
+                      của người dùng khác hay không;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Gắn, chèn hay cài đặt bất cứ siêu liên kết, tệp tin, từ
+                      khóa bị giấu hay từ khóa không thích hợp (nói cách khác là
+                      có tính chất lừa dối) cho các nội dung mà mình đăng trên
+                      Dịch vụ MONEX;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Làm bất cứ điều gì có thể dẫn đến vô hiệu hóa các chương
+                      trình bảo mật, bảo vệ của Dịch vụ MONEX hoặc có những xâm
+                      phạm khác vào các tính năng bảo mật hoặc các chức năng
+                      ngăn chặn, cấm sử dụng, sao chép các nội dung và không tôn
+                      trọng các qui định về giới hạn sử dụng của Dịch vụ
+                      MONEX;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Đăng tải các bài đăng chứa nội dung quảng cáo hoặc đăng
+                      tải các nội dung quảng cáo một cách độc lập, tuyên truyền,
+                      mua bán hàng hóa, dịch vụ bị cấm; truyền bá các vật phẩm
+                      bị cấm lưu hành trên Dịch vụ MONEX;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Đăng tải các nội dung vi phạm bản quyền, vi phạm quyền sở
+                      hữu công nghiệp của bất cứ cá nhân, tổ chức nào trên Dịch
+                      vụ MONEX;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Quấy rối các thành viên khác trên Dịch vụ MONEX bằng bất
+                      cứ hình thức nào bao gồm nhưng không giới hạn bởi các hành
+                      vi nhắn tin, bình luận, gửi các lời mời tham gia diễn đàn,
+                      tham gia trò chơi… trên Dịch vụ MONEX;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Tự mình liên hệ hoặc cố gắng tìm cách lôi kéo người khác
+                      liên hệ với người dùng khác của MONEX thông qua bất cứ nền
+                      tảng nào khác không được cung cấp bởi MONEX dù có nhằm mục
+                      đích xác lập các giao dịch bên ngoài hay không;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Các hành vi vi phạm pháp luật khác.</span
+                    >
+                  </li>
+                </ol>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong
+                      >QUY ĐỊNH VỀ VIỆC SỬ DỤNG DỊCH VỤ TRÊN MONEX</strong
+                    ></span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong
+                      >1.1. Quy định đối với hoạt động chung</strong
+                    ></span
+                  >
+                </p>
+                <ol style="list-style-type: lower-alpha">
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Đối với người dùng là cá nhân, bạn phải đảm bảo bạn không
+                      thuộc đối tượng hạn chế truy cập và sử dụng dịch vụ của
+                      chúng tôi (có nghĩa là bạn phải đủ 18 tuổi và có đủ năng
+                      lực hành vi dân sự) khi truy cập và sử dụng Dịch vụ MONEX.
+                      Mọi đăng ký, sử dụng hoặc truy cập vào Dịch vụ MONEX của
+                      bất kỳ người nào thuộc đối tượng hạn chế đều không được
+                      phép và bị coi là vi phạm các Điều khoản sử dụng
+                      này;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Người dùng phải Cung cấp đầy đủ và không gian dối các
+                      thông tin cá nhân của mình trong quá trình đăng ký sử dụng
+                      dịch vụ và chịu trách nhiệm với các thông tin đó;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Trong suốt quá trình sử dụng Dịch vụ, người dùng phải sửa
+                      đổi, cập nhật thông tin cá nhân của mình trên hệ thống
+                      Dịch vụ MONEX theo thông tin chính xác mỗi khi có thay đổi
+                      thông tin cá nhân của mình. Thời hạn chậm nhất để cập nhật
+                      là trong vòng 05 ngày kể từ ngày có thay đổi bất kỳ thông
+                      tin cá nhân nào đã được kê khai trên hệ thống Dịch vụ
+                      MONEX;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Thực hiện các hoạt động mua sắm tại Dịch vụ MONEX theo
+                      đúng các chính sách của MONEX và quy định của pháp
+                      luật;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Người dùng được hưởng các chính sách ưu đãi đối với người
+                      dùng hoặc tham gia tất cả các chương trình khuyến mại do
+                      MONEX tổ chức theo thể lệ và điều kiện mà MONEX công bố
+                      trong mỗi chương trình;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Người dùng được thông báo và yêu cầu ban quản trị trang
+                      xử lý các hành vi vi phạm trên MONEX khi có chứng cứ hợp
+                      lệ;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Người dùng phải tự bảo mật tài khoản đã được tạo của mình
+                      thông qua chức năng quản lý quyền riêng tư và các thiết
+                      lập ứng dụng mà MONEX đưa ra, không chia sẻ mật khẩu cho
+                      bất cứ ai truy cập vào tài khoản của mình hoặc làm bất cứ
+                      điều gì có thể gây nguy hiểm cho việc bảo mật tài khoản
+                      của mình;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Tự chịu trách nhiệm đối với các hoạt động của mình trên
+                      Dịch vụ MONEX;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Nếu bạn là Nhà cung cấp, bạn tự chịu trách nhiệm với
+                      Khách hàng về chất lượng của các sản phẩm/dịch vụ mà bạn
+                      cung cấp, thực hiện chính sách giao hàng, đổi/trả, bảo
+                      hành và các chính sách chăm sóc khách hàng theo đúng nội
+                      dung đã công bố và phải phù hợp với quy định của pháp
+                      luật;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Người dùng phải tuân thủ thỏa thuận cung cấp và sử dụng
+                      của MONEX và các quy định chung của pháp luật, không tạo
+                      điều kiện, tiếp tay hoặc khuyến khích bất cứ hành vi nào
+                      vi phạm chính sách sử dụng nào của MONEX hoặc vi phạm quy
+                      định của pháp luật.</span
+                    >
+                  </li>
+                </ol>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>1.2. Quy định đối với giao dịch</strong></span
+                  >
+                </p>
+                <ol style="list-style-type: lower-alpha">
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><strong>Đồng tiền giao dịch:</strong> Khách hàng và Nhà
+                      cung cấp chỉ được tiến hành các giao dịch bằng đồng tiền
+                      Việt Nam qua hệ thống Dịch vụ của MONEX;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><strong>Tính minh bạch trong giao dịch:</strong> Bạn cam
+                      kết và đảm bảo với MONEX và các bên còn lại trong một giao
+                      dịch rằng sẽ niêm yết công khai tất cả các thông tin liên
+                      quan đến hàng hóa như: giá cả, thuế, phí giao hàng, chính
+                      sách đổi/trả/bảo hành, các hỗ trợ kỹ thuật và/hoặc chăm
+                      sóc sau mua hàng (nếu có) để khách hàng có thể tính được
+                      trước toàn bộ số tiền phải trả khi họ muốn mua một sản
+                      phẩm từ bạn. Tất cả các khoản không được niêm yết và thỏa
+                      thuận trước đều không có hiệu lực. Khi sử dụng ứng dụng
+                      MONEX, bạn có thể biết và tính toán được tất cả các khoản
+                      cần thanh toán (bao gồm cả chi tiết và tổng thể) theo các
+                      cách được hướng dẫn cụ thể trên Dịch vụ MONEX.</span
+                    >
+                  </li>
+                </ol>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>QUY ĐỊNH VỀ XỬ LÝ VI PHẠM</strong></span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>1. Thông báo vi phạm</strong></span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Bạn hay bất cứ <u>người dùng </u>cũng như tổ chức, cá nhân
+                    nào đều có thể gửi khiếu nại hoặc thông báo với MONEX về các
+                    hành vi của người dùng khác hoặc các nội dung do người dùng
+                    khác đưa lên nếu có chứng cứ cho rằng hành vi hoặc nội dung
+                    này vi phạm pháp luật, vi phạm Điều khoản sử dụng này hoặc
+                    xâm phạm đến quyền, lợi ích hợp pháp của chính bạn hoặc của
+                    tổ chức, cá nhân khác thông qua email </span
+                  ><a href="mailto:support@monex.vn"
+                    ><span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><u>support@monex.vn</u></span
+                    ></a
+                  ><span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                  >
+                    hoặc số điện thoại 1900<s> </s>234583.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Khi thực hiện việc thông báo, bạn phải đưa ra được các căn
+                    cứ chứng minh hành vi vi phạm và phải chịu trách nhiệm về
+                    thông báo này.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong
+                      >2. Các hình thức xử lý vi phạm đối với người dùng</strong
+                    ></span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Tùy vào từng mức độ và số lần vi phạm, MONEX có những hình
+                    thức xử lý như sau:</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>a. Khóa tài khoản 07 ngày:</strong> MONEX sẽ cảnh
+                    cáo bạn bằng cách tạm khóa tài khoản của bạn trong vòng 07
+                    ngày nếu hành vi của bạn thuộc một trong các trường hợp sau
+                    đây:</span
+                  >
+                </p>
+                <ol>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Cung cấp thông tin gian dối: Cung cấp các thông tin
+                        không đúng sự thật trong quá trình sử dụng Dịch vụ
+                        MONEX;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Không cập nhật thông tin: Không cập nhật các thay đổi
+                        về thông tin cá nhân đã kê khai trên hệ thống Dịch vụ
+                        MONEX trong quá trình sử dụng dịch vụ theo quy định tại
+                        Điều khoản sử dụng này;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Vi phạm quyền riêng tư: Để người khác sử dụng tài khoản
+                        của mình vì bất cứ lý do gì và cho bất cứ mục đích gì
+                        khi chưa được sự cho phép của MONEX;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Công kích người khác: Sử dụng hình ảnh, thông tin, âm
+                        thanh, video, hoặc loại hình nội dung khác… mang tính
+                        xúc phạm, đưa thông tin xuyên tạc, vu khống, nhạo báng,
+                        xúc phạm uy tín tới tổ chức, cá nhân;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Vi phạm quyền sở hữu trí tuệ: Ăn cắp các nội dung trên
+                        các kênh, sao chép hoặc trích dẫn mà không được phép sử
+                        dụng bản quyền của người khác.</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Vi phạm khác: Các vi phạm đối với các quy định khác của
+                        Điều khoản sử dụng này và các quy định khác của pháp
+                        luật mà chưa đến mức bị cơ quan nhà nước có thẩm quyền
+                        xử lý hành chính trở lên và không thuộc trường hợp bị
+                        khóa vĩnh viễn tài khoản.</i
+                      ></span
+                    >
+                  </li>
+                </ol>
+                <p style="margin-left: 1px; text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>b. Khóa tài khoản vĩnh viễn:</strong> Nếu bạn vi
+                    phạm một trong các điều được liệt kê dưới đây, MONEX sẽ tiến
+                    hành khóa vĩnh viễn tài khoản của bạn:</span
+                  >
+                </p>
+                <ol>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Bạn có hành vi lợi dụng MONEX nhằm chống phá nước Cộng
+                        Hòa Xã Hội Chủ Nghĩa Việt Nam. Hành vi này bao gồm nhưng
+                        không giới hạn việc bạn&nbsp;sử dụng tên, hình ảnh của
+                        các vĩ nhân, các vị anh hùng của dân tộc, các vị lãnh
+                        đạo của Đảng và Nhà nước, hoặc bạn có sử dụng hình ảnh,
+                        video, phát ngôn… có chứa thông tin bàn luận về vấn đề
+                        chính trị hoặc tiết lộ bí mật nhà nước Cộng Hòa Xã Hội
+                        Chủ Nghĩa Việt Nam;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Lừa đảo: Bạn thông qua hoặc lợi dụng hệ thống của MONEX
+                        để thực hiện bất cứ hành vi lừa đảo nào được quy định
+                        trong Luật Hình sự của nước Cộng Hòa Xã Hội Chủ Nghĩa
+                        Việt Nam;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Thông tin cá cược, cờ bạc: Thông qua hoặc lợi dụng
+                        MONEX để đăng tải nội dung thông tin, hình ảnh, âm
+                        thanh, video, các hình thức nội dung khác… chứa thông
+                        tin để tổ chức các hình thức cá cược, cờ bạc;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Phá hoại hệ thống Dịch vụ MONEX: Thành viên lợi dụng
+                        việc sử dụng sản phẩm để xâm nhập vào hệ thống máy chủ
+                        nhằm phá hoại sản phẩm hoặc cản trở việc truy cập thông
+                        tin. Bạn sử dụng công cụ kỹ thuật nhằm làm treo máy chủ
+                        hệ thống, gây cản trở hoạt động bình thường của Dịch vụ
+                        MONEX hoặc cản trở hoạt động của người dùng khác trên
+                        Dịch vụ MONEX;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Vi phạm bất cứ nghĩa vụ nào trong việc mua/bán hàng hóa
+                        trên Dịch vụ MONEX;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Vi phạm quy định về đối tượng hạn chế cung cấp dịch vụ
+                        của MONEX;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Đã bị khóa tài khoản 07 ngày 01 lần nhưng vẫn vi phạm
+                        một trong các quy định của Điều khoản sử dụng này hoặc
+                        bất cứ quy định nào của pháp luật.</i
+                      ></span
+                    >
+                  </li>
+                </ol>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong
+                      >c. Cung cấp thông tin liên quan cho cơ quan nhà nước có
+                      thẩm quyền:</strong
+                    >
+                    Đồng thời với việc xử lý vi phạm bằng các chế tài nêu trên,
+                    trong những trường hợp cần thiết, theo yêu cầu của cơ quan
+                    nhà nước có thẩm quyền hoặc người bị thiệt hại, MONEX sẽ
+                    cung cấp thông tin liên quan để giải quyết vấn đề theo quy
+                    định của pháp luật.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>Lưu ý:</strong></span
+                  >
+                </p>
+                <ol style="list-style-type: lower-alpha">
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Trong tất cả mọi trường hợp, việc xử lý vi phạm đối với
+                        bạn đều được thông báo tới số điện thoại hoặc địa chỉ
+                        email mà bạn đăng ký trên hệ thống về lý do xử lý, chứng
+                        cứ và chế tài mà bạn đang bị áp dụng;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Việc khóa tài khoản theo điểm a và điểm b của nội dung
+                        này không làm cho bạn được miễn trừ bất cứ trách nhiệm
+                        nào mà bạn có nghĩa vụ phải thực hiện theo các giao đơn
+                        mua hàng mà bạn đã xác lập trên MONEX.</i
+                      ></span
+                    >
+                  </li>
+                </ol>
+                <p style="text-align: justify">
+                  <br />
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong
+                      >3. Cơ chế giải quyết tranh chấp, khiếu nại</strong
+                    ></span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Đối với các tranh chấp giữa bạn và người dùng khác trên
+                    Dịch vụ MONEX, các khiếu nại về chính sách của MONEX…, MONEX
+                    sẽ áp dụng cơ chế để giải quyết như sau:</span
+                  >
+                </p>
+                <ol style="list-style-type: lower-alpha">
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Khi bạn đăng ký tạo tài khoản và được MONEX cung cấp tài
+                      khoản để sử dụng một phần hoặc toàn bộ các dịch vụ của
+                      MONEX thì bất kỳ tranh chấp phát sinh trong quá trình sử
+                      dụng Dịch vụ MONEX của bạn sẽ được giải quyết theo pháp
+                      luật hiện hành của nước Cộng Hòa Xã Hội Chủ Nghĩa Việt
+                      Nam;</span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      >Bất kỳ khiếu nại nào phát sinh từ việc sử dụng Dịch vụ
+                      MONEX phải được thực hiện trong vòng 01 (một) tháng kể từ
+                      ngày xảy ra vi phạm. MONEX chỉ hỗ trợ, giải quyết khiếu
+                      nại, tố cáo của bạn trong phạm vi quyền hạn của MONEX và
+                      bạn đã ghi đầy đủ, trung thực và chính xác thông tin khi
+                      đăng ký tài khoản. Các vi phạm pháp luật sẽ cần được giải
+                      quyết tại cơ quan nhà nước có thẩm quyền.</span
+                    >
+                  </li>
+                </ol>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>QUYỀN SỞ HỮU NỘI DUNG TRÊN MONEX</strong></span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <br />
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Tất cả nội dung trên MONEX, bao gồm nhưng không giới hạn
+                    đối với thiết kế, văn bản, đồ họa, hình ảnh, video, thông
+                    tin, phần mềm, nhạc, âm thanh và các tệp khác cũng như lựa
+                    chọn và sắp xếp của chúng ("Nội dung trên MONEX") là tài sản
+                    thuộc toàn quyền sở hữu của MONEX. Không có nội dung nào
+                    trên MONEX có thể được sửa đổi, sao chép, phân phối, dựng
+                    kết cấu, tái bản, xuất bản, tải xuống, hiển thị, đăng,
+                    truyền hoặc bán dưới mọi hình thức hoặc bất kỳ phương tiện
+                    nào mà không có sự cho phép trước bằng văn bản của MONEX;
+                    bạn không được phép xuất bản lại nội dung trên MONEX tại bất
+                    kỳ nền tảng nào hoặc kết hợp thông tin trong bất kỳ cơ sở dữ
+                    liệu hoặc biên dịch nào khác. Bất kỳ việc sử dụng MONEX hoặc
+                    nội dung trên MONEX nào khác ngoài các phạm vi đã được cho
+                    phép cụ thể ở đây, mà không có sự cho phép trước bằng văn
+                    bản của MONEX, đều bị nghiêm cấm và phải được xử lý theo quy
+                    định của pháp luật về hành vi xâm phạm quyền đối với các tài
+                    sản/sản phẩm của MONEX. Trừ khi được nêu rõ trong tài liệu
+                    này, không có điều khoản nào trong các điều khoản sử dụng
+                    này được hiểu là trao bất kỳ sự cho phép nào đối với quyền
+                    sở hữu trí tuệ, cho dù là ngụ ý hay cách khác cho bạn.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <br />
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Bạn có thể xem lại thông tin cá nhân (bao gồm cả dữ liệu
+                    tín dụng) được đăng tải hoặc liên quan đến những Khách hàng
+                    của bạn trên MONEX, nhưng bạn không được phép tiết lộ hoặc
+                    sử dụng thông tin đó cho bất kỳ mục đích nào khác ngoài việc
+                    đánh giá độ tin cậy của những Khách hàng đó, và không được
+                    sao chép bất kỳ thông tin cá nhân nào (bao gồm cả dữ liệu
+                    tín dụng). Hơn nữa, bạn tuyên bố và bảo đảm rằng: (i) bạn
+                    không có khả năng kết hợp bất kỳ thông tin cá nhân nào (bao
+                    gồm cả dữ liệu tín dụng) được đăng tải hoặc liên quan đến
+                    những Khách hàng của bạn để nhận diện bất kỳ cá nhân nào;
+                    (ii) bạn sẽ không thực hiện bất kỳ nỗ lực nào để lấy dữ liệu
+                    cho phép bạn kết nối bất kỳ thông tin cá nhân nào (bao gồm
+                    cả dữ liệu tín dụng) được đăng bởi hoặc liên quan đến những
+                    Khách hàng của bạn để nhận diện bất kỳ cá nhân nào; (iii)
+                    bạn sẽ không chấp nhận bất kỳ thông tin nào từ bất kỳ bên
+                    thứ ba nào cho phép một sự kết nối như vậy; và (iv) bạn cũng
+                    sẽ không kết nối theo bất cứ cách nào như vậy.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <br />
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong
+                      >NGHĨA VỤ CỦA BẠN VỀ THU THẬP VÀ HỦY BỎ DỮ LIỆU</strong
+                    ></span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <br />
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Nếu không có sự đồng ý trước của chúng tôi, bạn không được
+                    phép:</span
+                  >
+                </p>
+                <ol>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Sử dụng bất kỳ phương tiện tự động nào để truy cập
+                        MONEX hoặc thu thập bất kỳ thông tin nào từ MONEX (bao
+                        gồm nhưng không giới hạn: rô bốt, trình thu thập thông
+                        tin, tập lệnh hoặc các chương trình, hoặc thiết bị tự
+                        động khác);</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Dựng kết cấu ứng dụng, sử dụng các kỹ thuật để đính kèm
+                        bất kỳ nội dung hoặc thông tin độc quyền nào khác của
+                        chúng tôi, đặt các cửa sổ lên trên các nội dung của
+                        MONEX, hoặc ảnh hưởng đến việc hiển thị các trang của
+                        MONEX;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Tham gia vào các hoạt động "chụp cắt màn hình", "cắt
+                        trộm dữ liệu" hoặc bất kỳ hoạt động nào khác để thu thập
+                        nội dung hoặc thông tin khác;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Tải lên, đăng, gửi email, truyền tải hoặc cung cấp bất
+                        kỳ quảng cáo không được yêu cầu hoặc trái phép, tài liệu
+                        quảng cáo, "thư rác", "spam", "thư chuỗi", "bán hàng đa
+                        cấp" hoặc bất kỳ hình thức thương mại hoặc phi thương
+                        mại nào khác, gây quỹ hoặc truyền thông số lượng lớn cho
+                        bất kỳ ai;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Sử dụng dữ liệu được cung cấp bởi MONEX, được cung cấp
+                        dưới bất kỳ hình thức nào, cho bất kỳ mục đích cạnh
+                        tranh hay mục đích nào khác. Bạn cũng đồng ý rằng bạn
+                        chưa bao giờ sử dụng dữ liệu, được cung cấp dưới bất kỳ
+                        hình thức nào, từ các bên khác trong quá khứ để cạnh
+                        tranh với các sản phẩm hoặc dịch vụ của MONEX;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Sử dụng MONEX theo bất kỳ cách nào vi phạm luật hiện
+                        hành hoặc có thể làm hỏng, vô hiệu hóa, quá tải hoặc làm
+                        suy yếu Dịch vụ MONEX, hoặc gây trở ngại cho việc sử
+                        dụng và nhận diện Dịch vụ MONEX của bất kỳ bên nào
+                        khác.</i
+                      ></span
+                    >
+                  </li>
+                </ol>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Bằng quyết định riêng của mình, chúng tôi có thể chấm dứt,
+                    vô hiệu hóa hoặc điều chỉnh quyền truy cập hoặc sử dụng
+                    MONEX của bạn bất kỳ lúc nào mà không cần thông báo nếu bạn
+                    vi phạm bất cứ điều khoản nào đã thỏa thuận với MONEX.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Các điều khoản sau của điều khoản sử dụng này sẽ tiếp tục
+                    chấm dứt việc bạn sử dụng hoặc truy cập vào MONEX: các phần
+                    liên quan đến bồi thường, từ chối trách nhiệm, giới hạn
+                    trách nhiệm pháp lý, miễn trừ, luật áp dụng và giải quyết
+                    tranh chấp, quy định chung và bất kỳ điều khoản khác mà các
+                    điều khoản của nó chấm dứt việc bạn sử dụng hoặc truy cập
+                    vào MONEX.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <br />
+                  <br />
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>TUYÊN BỐ CỦA NGƯỜI SỬ DỤNG</strong></span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Bạn tuyên bố, đảm bảo và đồng ý rằng không có tài liệu nào
+                    được gửi qua tài khoản của bạn hoặc được đăng hoặc chia sẻ
+                    thông qua MONEX sẽ vi phạm hoặc xâm phạm quyền của bên thứ
+                    ba, bao gồm bản quyền, nhãn hiệu, quyền riêng tư, hoặc quyền
+                    công khai thông tin cá nhân khác hoặc quyền sở hữu; hoặc
+                    chứa tài liệu phỉ báng, gian lận hoặc bất hợp pháp. Bạn đồng
+                    ý không thu thập địa chỉ email hoặc thông tin liên hệ khác
+                    của người dùng từ MONEX hoặc trang web của MONEX bằng phương
+                    tiện điện tử hoặc các phương tiện khác nhằm gửi email không
+                    mong muốn hoặc các liên lạc không mong muốn khác. Ngoài ra,
+                    bạn đồng ý không sử dụng tập lệnh tự động để thu thập thông
+                    tin từ MONEX hoặc trang web của MONEX hoặc cho bất kỳ mục
+                    đích nào khác. Bạn cũng đồng ý rằng bạn không được sử dụng
+                    MONEX theo cách bất hợp pháp hoặc theo bất kỳ cách nào khác
+                    có thể làm hỏng, vô hiệu hóa, quá tải hoặc làm suy yếu hệ
+                    thống của MONEX. Ngoài ra, trừ trường hợp được MONEX chấp
+                    thuận bằng văn bản, bạn đồng ý không sử dụng sản phẩm, dịch
+                    vụ của MONEX để:</span
+                  >
+                </p>
+                <ol>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Tải lên, đăng tải, truyền tải, chia sẻ, lưu trữ hoặc
+                        cung cấp bất kỳ nội dung nào mà chúng tôi cho là độc
+                        hại, đe dọa, bất hợp pháp, phỉ báng, vi phạm, lạm dụng,
+                        quấy rối, thô tục, gian lận, xâm phạm quyền riêng tư
+                        hoặc công khai, thù hận, hoặc phân biệt chủng tộc, gây
+                        chia rẽ dân tộc hoặc theo cách khác có thể vi phạm pháp
+                        luật;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Đăng ký nhiều tài khoản người dùng; đăng ký tài khoản
+                        người dùng thay mặt cho cá nhân khác, vận hành tài khoản
+                        người dùng thay mặt hoặc vì lợi ích của bất kỳ người nào
+                        không đủ điều kiện đăng ký hoặc vận hành tài khoản người
+                        dùng dưới tên của họ; hoặc đăng ký tài khoản Người dùng
+                        thay mặt cho bất kỳ nhóm hoặc tổ chức nào mà không có sự
+                        ủy quyền hợp pháp và phù hợp với các quy định của
+                        MONEX;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Mạo danh bất kỳ cá nhân hoặc tổ chức nào, hoặc tuyên bố
+                        hoặc cung cấp sai thông tin cá nhân, tuổi tác hoặc bất
+                        cứ thông tin nào khác được yêu cầu cung cấp trên hệ
+                        thống Dịch vụ của MONEX;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Tải lên, đăng, truyền, chia sẻ hoặc cung cấp bất kỳ
+                        quảng cáo, lời mời, tài liệu quảng cáo trái phép nào,
+                        "thư rác", "spam", "thư chuỗi", "bán hàng đa cấp" hoặc
+                        bất kỳ hình thức chào mời nào khác;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Tải lên, đăng tải, truyền tải, chia sẻ, lưu trữ hoặc
+                        cung cấp công khai trên MONEX bất kỳ thông tin cá nhân
+                        nào của bất kỳ bên thứ ba nào, bao gồm nhưng không giới
+                        hạn, địa chỉ, số điện thoại, địa chỉ email, chứng minh
+                        nhân dân/ thẻ căn cước và số thẻ tín dụng…;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Thu thập thông tin cá nhân của bất kỳ người dùng nào
+                        hoặc chiếm dụng mật khẩu hoặc thông tin nhận dạng cá
+                        nhân của bất cứ người dùng nào cho bất cứ mục đích
+                        gì;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Tải lên, đăng tải, truyền tải, chia sẻ hoặc cung cấp
+                        bất kỳ tài liệu nào có chứa vi-rút phần mềm hoặc bất kỳ
+                        mã độc hại hoặc mã theo dõi máy tính, tệp hoặc chương
+                        trình nào khác được thiết kế để theo dõi, làm gián đoạn,
+                        phá hủy hoặc giới hạn chức năng của bất kỳ phần mềm máy
+                        tính hoặc phần cứng hoặc thiết bị viễn thông nào;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i>Đe dọa hoặc quấy rối người dùng khác;</i></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Tải lên, đăng tải, truyền tải, chia sẻ, lưu trữ hoặc
+                        tạo nội dung có sẵn, cấu thành, khuyến khích hoặc cung
+                        cấp hướng dẫn về hành vi phạm tội, vi phạm quyền của bất
+                        kỳ bên nào hoặc vi phạm bất cứ quy định nào của pháp
+                        luật;</i
+                      ></span
+                    >
+                  </li>
+                  <li style="text-align: justify">
+                    <span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><i
+                        >Sử dụng hoặc cố gắng sử dụng tài khoản, dịch vụ hoặc hệ
+                        thống của người khác mà không có sự cho phép của người
+                        đó và MONEX, hoặc tạo một nhận dạng sai trên MONEX.</i
+                      ></span
+                    >
+                  </li>
+                </ol>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong
+                      >NỘI DUNG NGƯỜI DÙNG ĐƯỢC ĐĂNG TRÊN MONEX</strong
+                    ></span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Bạn tự chịu trách nhiệm về thông tin cá nhân hoặc doanh
+                    nghiệp, ảnh, tiểu sử, tin nhắn, ghi chú, văn bản, thông tin,
+                    nhạc, video, thông tin liên hệ cho bạn hoặc người khác, hoặc
+                    nội dung khác mà bạn tải lên, xuất bản, cung cấp hoặc hiển
+                    thị (sau đây gọi tắt là "đăng tải") trên hoặc thông qua
+                    MONEX hoặc trang web của MONEX hoặc truyền hoặc chia sẻ với
+                    những người dùng khác (gọi chung là "Nội dung người dùng").
+                    Điều này là trái với điều khoản sử dụng để liên hệ trực tiếp
+                    với các thành viên hoặc cố gắng tham gia vào bất kỳ giao
+                    dịch nào với các thành viên bên ngoài MONEX. Bạn hiểu và
+                    đồng ý rằng MONEX có thể, nhưng không bắt buộc phải xem xét
+                    và xóa (mà không cần thông báo) bất kỳ nội dung người dùng
+                    nào theo ý mình, bao gồm nhưng không giới hạn, nội dung của
+                    người dùng bằng phán quyết duy nhất của MONEX khi người dùng
+                    vi phạm các điều khoản sử dụng này như có thể gây khó chịu
+                    hoặc bất hợp pháp hoặc có thể vi phạm các quyền, gây hại
+                    hoặc đe dọa sự an toàn của người dùng hoặc những người
+                    khác.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Bằng cách đăng Nội dung Người dùng lên bất kỳ phần nào của
+                    MONEX, bạn sẽ tự động cấp và bạn tuyên bố và đảm bảo rằng
+                    bạn có quyền cấp cho Công ty quyền không hủy ngang, vĩnh
+                    viễn, không độc quyền, có thể chuyển nhượng, được thanh toán
+                    đầy đủ trên toàn thế giới (với quyền tái cấp phép) để sử
+                    dụng, sao chép, công khai, hiển thị công khai, định dạng
+                    lại, dịch, truy cập danh bạ, vị trí, trích xuất (toàn bộ
+                    hoặc một phần) để sử dụng vào mục đích giao dịch trên nền
+                    tảng của chúng tôi nhưng công ty cam kết không sử dụng những
+                    thông tin này vào bất kỳ mục đích nào khác hơn mục đích cung
+                    cấp dịch vụ một cách tốt nhất và công ty cam kết không cung
+                    cấp thông tin này cho bất cứ bên nào. Bạn có thể xóa Nội
+                    dung Người dùng của mình khỏi MONEX bất kỳ lúc nào.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Bạn có thể xem lại thông tin cá nhân hoặc doanh nghiệp (bao
+                    gồm cả dữ liệu tín dụng) do người dùng khác đăng trên MONEX,
+                    nhưng bạn không được phép tiết lộ hoặc sử dụng thông tin đó
+                    cho bất kỳ mục đích nào khác ngoài việc đánh giá độ tin cậy
+                    của người dùng khác.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong
+                      >PHƯƠNG THỨC GIAO DỊCH VÀ CÔNG BỐ THÔNG TIN</strong
+                    ></span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>Giao dịch theo phương thức điện tử:</strong> Nền
+                    tảng công nghệ của MONEX chỉ hoạt động trên mạng, vì vậy,
+                    bạn cần phải đồng ý giao dịch với chúng tôi trực tuyến và
+                    theo phương thức điện tử. Bằng cách đồng ý với điều khoản sử
+                    dụng, bạn đồng ý rằng tất cả các tài liệu, thông tin, thông
+                    báo, hợp đồng và thỏa thuận (bao gồm mọi biểu mẫu) phát sinh
+                    từ hoặc liên quan đến việc bạn sử dụng MONEX, bao gồm mọi
+                    yêu cầu, đăng ký, phê duyêt hay lựa chọn của bạn khi được
+                    gửi cho bạn thông qua phương thức điện tử vào các địa chỉ
+                    email, số điện thoại hoặc bất cứ địa chỉ nào khác có thể
+                    giao dịch được bằng phương thức điện tử đều sẽ là hợp lệ.
+                    Các phương thức liên lạc điện tử có thể được chúng tôi sử
+                    dụng bao gồm nhưng không giới hạn ở: Tin nhắn SMS (bao gồm
+                    tin nhắn văn bản), cuộc gọi tự động thu âm sẵn nội dung tin
+                    nhắn hoặc giọng nói nhân tạo và cuộc gọi và tin nhắn được
+                    gửi bằng hệ thống quay số tự động hoặc hệ thống nhắn tin tự
+                    động, hoặc nhân viên của chúng tôi trực tiếp liên lạc…</span
+                  >
+                  <br />
+                  <span style="font-family: Arial, sans-serif; font-size: 11pt"
+                    >&nbsp;</span
+                  >
+                  <br />
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>Giao dịch thông qua bên thứ ba:</strong> Bằng cách
+                    chấp nhận các điều khoản sử dụng này, bạn đồng ý với chúng
+                    tôi, đại lý, đại diện, chi nhánh hoặc bất kỳ ai liên hệ với
+                    bạn dưới sự ủy quyền của chúng tôi đều là hợp lệ.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>Giao dịch thông qua các địa chỉ liên kết:</strong>
+                    Bạn đồng ý nhận thông tin từ các phương thức liên hệ của
+                    chúng tôi theo địa chỉ liên hệ mà bạn đã cung cấp cho chúng
+                    tôi, hoặc các địa chỉ liên lạc liên kết từ/với tài khoản của
+                    bạn (thông qua các dấu vết số, ID người gọi hoặc các phương
+                    tiện khác của bạn). Bạn tuyên bố rằng bạn cho phép chúng tôi
+                    truy cập, lần theo các dấu vết số, ID người gọi, danh bạ… để
+                    xác định được các địa chỉ liên lạc liên kết từ/với tài khoản
+                    của bạn nhằm phục vụ cho việc liên lạc nêu trên. Bạn cũng
+                    tuyên bố rằng bạn được phép nhận cuộc gọi tại mỗi số điện
+                    thoại mà bạn đã cung cấp cho chúng tôi.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>Cuộc gọi điện thoại tiếp thị:</strong> Nếu bạn đã
+                    đồng ý cho các cuộc gọi qua điện thoại, bạn đồng ý rằng (i)
+                    chúng tôi, đại lý, đại diện, chi nhánh, bên thứ ba và bất kỳ
+                    ai gọi thay mặt chúng tôi có thể gọi điện, gửi email hoặc
+                    tin nhắn tới số điện thoại và địa chỉ bạn đã cung cấp cho
+                    mục đích mô tả sản phẩm và dịch vụ mà bạn có thể quan tâm,
+                    do chúng tôi cung cấp, các chi nhánh và/hoặc bên thứ ba của
+                    chúng tôi thông qua phương thức điện tử đã được mô tả phía
+                    trên.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>Lưu ý:</strong> Sự đồng ý của bạn đối với các thông
+                    tin được cung cấp/nhận/xác nhận thông qua các phương thức
+                    điện tử nêu trên không phải là điều kiện duy nhất để các yêu
+                    cầu của bạn được phê duyệt bởi bên thứ ba cùng hoạt động
+                    trên MONEX. Chúng tôi chỉ yêu cầu liên hệ/cung cấp/xác nhận
+                    thông tin để thấy rằng bạn đủ điều kiện tham gia hoạt động
+                    trên hệ thống của chúng tôi.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>Chọn không tham gia:</strong> Khi không còn đơn
+                    hàng nào trong tình trạng đã nhận hàng nhưng chưa thanh toán
+                    trên Dịch vụ MONEX, bạn có thể hủy bỏ sự đồng ý của mình
+                    bằng cách liên hệ với chúng tôi qua email theo địa chỉ </span
+                  ><a href="mailto:support@monex.vn"
+                    ><span
+                      style="
+                        color: black;
+                        font-family: Arial, sans-serif;
+                        font-size: 12pt;
+                      "
+                      ><u>support@monex.vn</u></span
+                    ></a
+                  ><span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                  >
+                    hoặc bằng cách gọi cho bộ phận tổng đài hỗ trợ theo số
+                    1900234583 hoặc gửi văn bản cho chúng tôi đến địa chỉ của
+                    công ty chúng tôi. Sau khi đã đặt mua bất cứ sản phẩm nào và
+                    đã nhận được hàng nhưng chưa hoàn tất việc thanh toán, bạn
+                    phải duy trì tình trạng chấp nhận tiếp nhận thông tin từ
+                    MONEX và bên thứ ba đó như để đảm bảo việc thực hiện đúng
+                    giao dịch. Bạn có thể hủy bỏ sự đồng ý của bạn khi đã hoàn
+                    thành mọi nghĩa vụ phát sinh từ việc mua hàng đó của
+                    Bạn.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>Ghi âm và theo dõi:</strong> Bạn đồng ý với việc
+                    ghi âm và giám sát, để đảm bảo chất lượng dịch vụ, quản lý
+                    rủi ro và/hoặc mục đích dẫn chiếu phục vụ cho giải quyết
+                    tranh chấp của bất kỳ cuộc gọi nào bạn gọi cho chúng tôi
+                    (hoặc đại lý, đại diện, chi nhánh, bên thứ ba hoặc bất kỳ ai
+                    gọi điện thay mặt chúng tôi) hoặc chúng tôi (hoặc đại lý,
+                    đại diện, chi nhánh, bên thứ ba hoặc bất kỳ ai gọi thay mặt
+                    chúng tôi) gọi cho bạn.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong
+                      >ĐIỀU KHOẢN ÁP DỤNG BỔ SUNG CHO DOANH NGHIỆP VÀ TỔ CHỨC
+                      KHÁC</strong
+                    ></span
+                  >
+                  <br />
+                  <span style="font-family: Arial, sans-serif; font-size: 11pt"
+                    ><strong>&nbsp;</strong></span
+                  >
+                  <br />
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong
+                      >Mỗi doanh nghiệp/tổ chức được coi là một người dùng duy
+                      nhất trên hệ thống Dịch vụ của MONEX. Ngoài việc phải tuân
+                      thủ tất cả các nội dung được nêu tại bản Điều khoản sử
+                      dụng này, người dùng là doanh nghiệp và các tổ chức khác
+                      (sau đây gọi chung là “tổ chức”) còn phải tuân theo các
+                      điều kiện dưới đây:</strong
+                    ></span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>Điều kiện về người đại diện</strong>: Việc truy cập
+                    MONEX dành cho người dùng là tổ chức khác phải được thực
+                    hiện thông qua người đại diện hợp pháp (người đại diện theo
+                    pháp luật hoặc người được người đại diện theo pháp luật ủy
+                    quyền theo đúng quy định của pháp luật). Nếu người đại diện
+                    nêu trên thực hiện các giao dịch vượt quá phạm vi được tổ
+                    chức cho phép hoặc vượt quá phạm vi được ủy quyền, người đại
+                    diện đó phải tự chịu trách nhiệm cá nhân đối với các phần
+                    giao dịch vượt quá phạm vi được tổ chức cho phép hoặc được
+                    ủy quyền.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Người đại diện của tổ chức không được phép vừa nhân danh tổ
+                    chức, vừa nhân danh chính mình để tham gia giao dịch trong
+                    cùng một thời điểm.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong
+                      >Điều kiện về ngành nghề đăng ký kinh doanh và giấy
+                      phép:</strong
+                    >
+                    Tổ chức tham gia giao dịch thông qua Dịch vụ MONEX phải đảm
+                    bảo có ngành nghề đăng ký kinh doanh phù hợp với hoạt động
+                    mà tổ chức đó giao dịch trên Dịch vụ MONEX. Đối với ngành
+                    nghề kinh doanh yêu cầu phải có giấy phép con trước khi hoạt
+                    động, tổ chức cần đảm bảo đã được cấp các giấy phép đó một
+                    cách đầy đủ. Tổ chức tham gia giao dịch đảm bảo sẽ cung cấp
+                    cho MONEX bản sao của các giấy tờ chứng minh mình có ngành
+                    nghề đăng ký kinh doanh một cách hợp pháp để hoạt động trên
+                    Dịch vụ MONEX (có thể là Giấy chứng nhận đăng ký kinh doanh,
+                    giấy phép con hoặc bất cứ tài liệu nào có thể chứng minh
+                    được theo quy định của pháp luật).</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>Không giao dịch vì lợi ích của bên thứ ba:</strong>
+                    Người đại diện của tổ chức không vận hành hoặc sử dụng tài
+                    khoản mở dưới tên của một doanh nghiệp hoặc tổ chức vì lợi
+                    ích của bất kỳ người nào ngoài doanh nghiệp hoặc tổ chức
+                    đó.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>Dữ liệu đăng ký, Bảo mật tài khoản:</strong> Khi
+                    xem xét việc tổ chức sử dụng MONEX, người đại diện của tổ
+                    chức cũng đồng ý cả với tư cách cá nhân cũng như thay mặt
+                    cho tổ chức đó, đồng ý (a) cung cấp thông tin chính xác, cập
+                    nhật và đầy đủ về tổ chức, bản thân người đại diện và bất kỳ
+                    người đại diện nào khác và/hoặc đại diện được ủy quyền của
+                    tổ chức hoặc thành viên khác của tổ chức có thể được nhắc
+                    bởi bất kỳ biểu mẫu đăng ký nào hoặc theo yêu cầu của MONEX
+                    ("Dữ liệu Đăng ký"), bao gồm tên pháp lý đầy đủ của tổ chức;
+                    (b) cung cấp các tài liệu như MONEX có thể yêu cầu để tạo
+                    lập và/hoặc xác minh danh tính hoặc thẩm quyền để ký kết các
+                    thỏa thuận ràng buộc thay mặt cho tổ chức, hoặc để xác minh
+                    pháp tư cách pháp lý của tổ chức, tổ chức có đủ điều kiện để
+                    hoạt động như những nội dung nào mà tổ chức yêu cầu hay
+                    không; (c) duy trì tính bảo mật của bất kỳ mật khẩu và nhận
+                    dạng nào được cấp cho tổ chức; (d) duy trì và cập nhật kịp
+                    thời dữ liệu đăng ký, và bất kỳ thông tin nào khác của tổ
+                    chức và người đại diện trong vòng 02 ngày kể từ ngày có thay
+                    đổi; (e) thông báo kịp thời cho MONEX về bất kỳ thay đổi nào
+                    về tình trạng pháp lý hoặc các nguy cơ có thể tác động đến
+                    tình trạng pháp lý của tổ chức; (f) chịu hoàn toàn trách
+                    nhiệm đối với tất cả việc sử dụng bất kỳ tài khoản nào được
+                    mở thay mặt cho tổ chức và đối với bất kỳ hành động nào diễn
+                    ra khi sử dụng tài khoản đó.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>SỞ HỮU TRÍ TUỆ</strong></span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>Không chuyển giao quyền sở hữu trí tuệ:</strong>
+                    Người dùng xác nhận rằng mọi việc cấp quyền sử dụng tài
+                    khoản, mọi hợp đồng ký kết hoặc mọi sự cho phép sử dụng dịch
+                    vụ của MONEX cho người dùng không làm cho người dùng có
+                    quyền sở hữu, sử dụng hay định đoạt bất cứ yếu tố nào thuộc
+                    tài sản là đối tượng của quyền sở hữu trí tuệ của MONEX dù
+                    được thể hiện trên hệ thống Dịch vụ MONEX hay không. Tài sản
+                    là đối tượng của quyền sở hữu trí tuệ của MONEX có thể bao
+                    gồm nhưng không hạn chế ở: nhãn hiệu; tên thương mại; bí mật
+                    kinh doanh; thông tin khách hàng; các thiết kế chức năng, mã
+                    nguồn, đồ họa, thuật toán ứng dụng của phần mềm/ứng dụng hay
+                    bất cứ chương trình máy tính nào được sử dụng để cung cấp
+                    hoặc hỗ trợ cho việc cung cấp Dịch vụ MONEX; logo; sáng chế;
+                    giải pháp hữu ích; các nội dung bài viết, video, quy trình…
+                    dù cho chúng có được đăng ký bởi MONEX hay không.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>Bồi thường:</strong> Theo đạo luật bản quyền thiên
+                    niên kỷ kỹ thuật số (DMCA) của Mỹ và luật hiện hành liên
+                    quan tại Việt Nam, MONEX có thể sẽ áp dụng các biện pháp
+                    pháp lý tại Tòa án hoặc bất cứ cơ quan tư pháp nào của Việt
+                    Nam để bảo vệ quyền của mình đối với các hành vi xâm phạm
+                    quyền sở hữu trí tuệ nêu trên. Bên cạnh đó, khi xét thấy cần
+                    thiết, MONEX cũng có thể yêu cầu người vi phạm thanh toán
+                    các khoản bồi thường thiệt hại, chi phí sử dụng trái phép,
+                    các khoản phí luật sư và bất cứ khoản chi phí nào khác phát
+                    sinh do việc xử lý vi phạm này gây ra.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>QUYỀN RIÊNG TƯ</strong></span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Vui lòng xem lại Chính sách quyền riêng tư của MONEX. Bằng
+                    cách sử dụng MONEX, bạn đồng ý với Chính sách quyền riêng tư
+                    và đồng ý để dữ liệu cá nhân của bạn được được tiếp cận phục
+                    vụ cho các yêu cầu và phê duyệt của bạn. Chúng tôi có thể
+                    lắng nghe và/hoặc ghi lại các cuộc gọi điện thoại giữa bạn
+                    và đại diện của chúng tôi cho mục đích nêu tại bản Chính
+                    sách quyền riêng tư đó.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>LOẠI TRỪ TRÁCH NHIỆM</strong></span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >MONEX có thể đôi lúc tạm thời không khả dụng để bảo trì
+                    hoặc các lý do khác. Vì vậy chúng tôi không chịu trách nhiệm
+                    về bất kỳ lỗi, thiếu sót, gián đoạn, xóa, lỗi, chậm trễ
+                    trong hoạt động hoặc truyền tải, lỗi đường truyền, trộm cắp
+                    hoặc hủy hoặc truy cập trái phép hoặc thay đổi thông tin
+                    liên lạc của người dùng diễn ra trong thời gian bảo trì hoặc
+                    thời gian không khả dụng này. MONEX không chịu trách nhiệm
+                    về bất kỳ sự cố hoặc sự cố kỹ thuật nào của bất kỳ mạng hoặc
+                    đường dây điện thoại nào, hệ thống máy tính trực tuyến, máy
+                    chủ hoặc nhà cung cấp, thiết bị máy tính, phần mềm, lỗi hoặc
+                    về vấn đề kỹ thuật hoặc nghẽn mạch trên mạng hoặc sự kết hợp
+                    của chúng, bao gồm cả thiệt hại cho người dùng hoặc cho bất
+                    kỳ máy tính nào của người khác liên quan đến hoặc do việc
+                    tham gia hoặc tải xuống tài liệu liên quan đến MONEX. Trong
+                    mọi trường hợp, MONEX sẽ không chịu trách nhiệm cho bất kỳ
+                    tổn thất hoặc thiệt hại nào, bao gồm bất kỳ tổn thất hoặc
+                    thiệt hại nào đối với bất kỳ nội dung người dùng nào.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Công ty bảo lưu quyền thay đổi bất kỳ và tất cả nội dung có
+                    trên MONEX và mọi sản phẩm, dịch vụ được cung cấp qua MONEX
+                    bất kỳ lúc nào mà không cần thông báo. Tham chiếu đến bất kỳ
+                    sản phẩm, dịch vụ, quy trình hoặc thông tin nào khác, theo
+                    tên thương mại, nhãn hiệu, nhà sản xuất, nhà cung cấp hoặc
+                    các vấn đề khác.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>CAM KẾT VỀ TÍNH MINH BẠCH</strong></span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Tính minh bạch là một trong những giá trị cốt lõi của
+                    MONEX. Là một nhà cung cấp dịch vụ nền tảng có trách nhiệm
+                    với người dùng, MONEX đảm bảo và cam kết với người dùng về
+                    các nỗ lực tối đa hóa tính minh bạch trong luồng thông tin
+                    liên quan đến các công cụ và dịch vụ của mình.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Các nỗ lực để đảm bảo tính minh bạch của MONEX bao gồm
+                    nhưng không hạn chế ở các mục: người dùng được yêu cầu phải
+                    cung cấp các thông tin thật và chính xác của mình để thực
+                    hiện việc mua hàng trên Dịch vụ MONEX. Giá của các sản phẩm
+                    và các chi phí liên quan đến việc mua hàng đều phải được
+                    niêm yết công khai và bạn có quyền thỏa thuận và xác nhận
+                    trước khi thực hiện mua hàng. Bạn cũng có thể xem lại toàn
+                    bộ lịch sử giao dịch và các văn kiện mà mình đã ký hết hoặc
+                    chấp nhận thực thi tại bất cứ thời điểm nào bằng cách truy
+                    cập vào tài khoản cá nhân của mình trên MONEX và tìm lại các
+                    văn kiện đó.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Các thông tin hoặc dữ liệu liên quan đến hoạt động của bạn
+                    chỉ có thể được chúng tôi cung cấp ra bên ngoài theo yêu cầu
+                    của các cơ quan đại diện của Chính phủ hoặc theo sự cho phép
+                    của bạn.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <br />
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong
+                      >LUẬT ĐIỀU CHỈNH, ĐỊA ĐIỂM VÀ THẨM QUYỀN</strong
+                    ></span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    >Bằng cách truy cập hoặc sử dụng MONEX, bạn đồng ý rằng luật
+                    của nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam sẽ điều chỉnh
+                    các điều khoản sử dụng này. Nếu xảy ra tranh chấp, vi phạm,
+                    cơ quan tài phán của Việt Nam tại nơi MONEX có địa chỉ trụ
+                    sở sẽ là nơi giải quyết các tranh chấp này.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong>KHÁC</strong></span
+                  >
+                  <br />
+                  <span
+                    style="
+                      color: black;
+                      font-family: Arial, sans-serif;
+                      font-size: 12pt;
+                    "
+                    ><strong
+                      >Nếu MONEX không thể thực hiện hoặc thực thi bất kỳ quyền
+                      hoặc điều khoản nào của các điều khoản sử dụng này sẽ
+                      không cấu thành sự từ bỏ quyền hoặc điều khoản đó trong
+                      bất kỳ trường hợp nào khác. Nếu bất kỳ điều khoản nào
+                      trong các điều khoản sử dụng này không hợp lệ, phần còn
+                      lại của các điều khoản sử dụng này sẽ tiếp tục có hiệu lực
+                      thi hành đầy đủ. Nếu bất kỳ điều khoản nào trong các điều
+                      khoản sử dụng này sẽ được coi là bất hợp pháp, vô hiệu
+                      hoặc vì bất kỳ lý do nào không thể thi hành được thì điều
+                      khoản đó sẽ bị loại bỏ khỏi các điều khoản sử dụng này và
+                      sẽ không ảnh hưởng đến tính hợp lệ và khả năng thực thi
+                      của bất kỳ điều khoản nào còn lại.</strong
+                    ></span
+                  >
+                </p>
+              </h6>
+            </div>
+          </div>
+          <!-- Button Submit -->
+          <div class="custom-row text-center py-5">
+            <div
+              class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center"
+            >
+              <a href="/" type="button" class="m-btn m-btn-primary m-features">
+                Trở về trang chủ
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--   Footer   -->
+    <div class="m-footer container-fluid">
+      <div class="m-sub-email">
+        <input
+          type="email"
+          id="email"
+          name="email-receive"
+          pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+          title="Hãy nhập email của bạn"
+          required
+          placeholder="Email nhận thông báo ưu đãi ..."
+        />
+        <button type="button" id="receive-noti">Nhận thông báo</button>
+      </div>
+
+      <div class="m-logo">
+        <div class="m-logo-img">
+          <span><img src="./images/icon/Logo-Monex.svg" alt="" /></span>
+        </div>
+        <div class="m-logo-title">
+          <span class="logo-description"
+            >Nền tảng công nghệ kiến tạo phong cách mua sắm thông minh</span
+          >
+        </div>
+      </div>
+
+      <div class="m-about-me-container">
+        <div class="m-about-me">
+          <div class="m-step-social">
+            <div class="m-about-text">
+              <div class=""><span>Kết nối với Monex</span></div>
+            </div>
+
+            <div class="m-social-icon">
+              <div>
+                <a
+                  href="https://www.facebook.com/monexvn/"
+                  target="_blank"
+                  rel="noopener"
+                  ><img src="./images/icon/Facebook.svg" alt=""
+                /></a>
+              </div>
+<!--              <div>-->
+<!--                <a-->
+<!--                  href="https://zalo.me/2848902721585176437"-->
+<!--                  target="_blank"-->
+<!--                  rel="noopener"-->
+<!--                  ><img src="./images/icon/Zalo.svg" alt=""-->
+<!--                /></a>-->
+<!--              </div>-->
+<!--              <div>-->
+<!--                <a-->
+<!--                  href="https://www.youtube.com/channel/UC92hkaZycui0Wd4GUrhSL8A"-->
+<!--                  target="_blank"-->
+<!--                  rel="noopener"-->
+<!--                  ><img src="./images/icon/Youtube.svg" alt=""-->
+<!--                /></a>-->
+<!--              </div>-->
+<!--              <div>-->
+<!--                <a href="javascript:void(0)" target="_blank" rel="noopener"-->
+<!--                  ><img src="./images/icon/Linkedin.svg" alt=""-->
+<!--                /></a>-->
+<!--              </div>-->
+              <div>
+                <a
+                  href="https://www.tiktok.com/@monexvn"
+                  target="_blank"
+                  rel="noopener"
+                  ><img src="./images/icon/Tiktok.svg" alt=""
+                /></a>
+              </div>
+            </div>
+
+            <div class="m-connect-email">
+              <span class="m-about-text">Email</span>
+              <span class="m-email-title">support@monex.vn</span>
+            </div>
+          </div>
+
+          <div class="m-step-about-me">
+            <div class="m-about-text">
+              <div class="m-text-list"><span>Danh mục</span></div>
+            </div>
+
+            <div class="m-about-me-list">
+              <div class="m-list-item">
+                <a href="https://home.monex.vn/gioi-thieu/"
+                  ><span>Về Monex</span></a
+                >
+              </div>
+              <div class="m-list-item">
+                <a href="javascript:void(0)"><span>Mua sắm</span></a>
+              </div>
+              <div class="m-list-item">
+                <a href="hop-tac.html"><span>Hợp tác</span></a>
+              </div>
+              <div class="m-list-item">
+                <a href="https://home.monex.vn/tin-tuc/"
+                  ><span>Tin tức</span></a
+                >
+              </div>
+              <div class="m-list-item">
+                <a href="https://home.monex.vn/hoi-dap/"
+                  ><span>Hỏi đáp</span></a
+                >
+              </div>
+              <div class="m-list-item">
+                <a href="https://home.monex.vn/blog/"><span>Blog</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-step-download">
+            <div class="m-about-text">
+              <div class="m-text-list"><span>Tải ứng dụng Monex</span></div>
+            </div>
+
+            <div class="m-download-app">
+              <div class="m-download-qr">
+                <img src="./images/footers/qrcode-app.png" alt="" />
+              </div>
+
+              <div class="m-download-store">
+                <div class="m-appstore">
+                  <a
+                    href="https://apps.apple.com/app/monex/id1548427331"
+                    target="_blank"
+                    rel="noopener"
+                    ><img src="./images/footers/Appstore.png" alt=""
+                  /></a>
+                </div>
+                <div class="m-ggplay">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.epayvn.monex"
+                    target="_blank"
+                    rel="noopener"
+                    ><img src="./images/footers/Google-Play.png" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-footer-policy">
+        <div class="m-policy-content">
+          <div class="m-policy-title">
+            <span>Tuyên bố từ chối trách nhiệm</span>
+          </div>
+          <div class="m-policy-desc">
+            <span
+              >MONEX là một công ty công nghệ, cung cấp giải pháp đáp ứng nhu
+              cầu mua sắm của người dùng. MONEX có thể kết nối với các nhà cung
+              cấp dịch vụ thanh toán, giao hàng... để gia tăng tiện ích cho bạn
+              khi thực hiện các hoạt động mua sắm. Chúng tôi không trực tiếp
+              cung cấp các dịch vụ gia tăng tiện ích nêu trên, và cũng không
+              cung cấp dịch vụ tín dụng hoặc dịch vụ ngân hàng. Do đó, khi bạn
+              lựa chọn sử dung bất cứ dịch vụ nào được cung cấp bởi các bên thứ
+              ba đó, chúng tôi sẽ không chịu trách nhiệm đối với chất lượng sản
+              phẩm/dịch vụ mà họ cung cấp cho bạn cũng như các tranh chấp giữa
+              bạn và các nhà cung cấp đó.</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="m-footer-content">
+        <div class="m-sub-info">
+          <div class="m-sub-info-title">
+            <div class="m-info-company">
+              <span
+                >Địa chỉ liên hệ: Công ty cổ phần Monex, Tầng 5, Tòa nhà 389 Đê
+                La Thành, Ba Đình, Hà Nội</span
+              >
+            </div>
+            <div class="m-info-policy-terms">
+              <span>
+                <a class="text-decoration-none" href="javascript:void(0)"
+                  >Điều khoản & Điều kiện sử dụng</a
+                >
+              </span>
+              <span>
+                <a
+                  class="text-decoration-none"
+                  href="chinh-sach-quyen-rieng-tu.html"
+                  >Chính sách & Bảo mật</a
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--   End Footer   -->
+  </body>
+</html>

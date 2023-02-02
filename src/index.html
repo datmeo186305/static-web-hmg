@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Monex</title>
+    <script>
+      let metaOgUrl = document.createElement("meta");
+      metaOgUrl.setAttribute("property", "og:url");
+      metaOgUrl.content = document.location;
+      document.getElementsByTagName("head")[0].appendChild(metaOgUrl);
+    </script>
+    <link rel="stylesheet" href="./stylesheets/css/home.css" />
+  </head>
+  <body>
+    <!--  Modal  -->
+
+    <!--  Modal noti success -->
+    <div
+      class="modal"
+      id="myModal-receive-email-success"
+      data-backdrop="keyboard"
+      role="dialog"
+      tabindex="-1"
+      aria-labelledby="myModalLabel-04"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="receive-email-noti-success">
+            <div class="receive-email-modal-content">
+              <div class="receive-email-modal-checkmark">
+                <img src="./images/icon/noti-success.svg" alt="" />
+              </div>
+              <div class="receive-email-content-title">
+                <span>Thành công</span>
+              </div>
+              <div class="receive-email-content-desc">
+                <span>Đăng ký nhận thông báo thành công.</span>
+              </div>
+            </div>
+            <div class="receive-email-modal-submit" data-bs-dismiss="modal">
+              <a href="javascript:void(0)">Xác nhận</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  End Modal noti success -->
+
+    <!--  Modal noti fail -->
+    <div
+      class="modal"
+      id="myModal-receive-email-fail"
+      data-backdrop="keyboard"
+      role="dialog"
+      tabindex="-1"
+      aria-labelledby="myModalLabel-03"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="receive-email-noti-fail">
+            <div class="receive-email-modal-content">
+              <div class="receive-email-modal-checkmark">
+                <img src="./images/icon/noti-fail.svg" alt="" />
+              </div>
+              <div class="receive-email-content-title">
+                <span>Thất bại</span>
+              </div>
+              <div class="receive-email-content-desc">
+                <span>Đăng kí nhận thông báo thất bại. Vui lòng thử lại.</span>
+              </div>
+            </div>
+            <div class="receive-email-modal-submit" data-bs-dismiss="modal">
+              <a href="javascript:void(0)">Xác nhận</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="email-fail"
+      data-backdrop="keyboard"
+      role="dialog"
+      tabindex="-1"
+      aria-labelledby="myModalLabel-02"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="receive-email-noti-fail">
+            <div class="receive-email-modal-content">
+              <div class="receive-email-modal-checkmark">
+                <img src="./images/icon/noti-fail.svg" alt="" />
+              </div>
+              <div class="receive-email-content-title">
+                <span>Thất bại</span>
+              </div>
+              <div class="receive-email-content-desc">
+                <span>Vui lòng nhập đúng định dạng email.</span>
+              </div>
+            </div>
+            <div class="receive-email-modal-submit" data-bs-dismiss="modal">
+              <a href="javascript:void(0)">Xác nhận</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  End Modal noti fail -->
+
+    <!--  Modal download  -->
+    <div
+      class="modal"
+      id="myModal"
+      data-backdrop="keyboard"
+      role="dialog"
+      tabindex="-1"
+      aria-labelledby="myModalLabel-01"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-c-tabs">
+            <div class="modal-header">
+              <div class="modal-header-title">
+                <div class="btn-download">
+                  <img src="./images/icon/modal-download-icon.svg" alt="" />
+                </div>
+                <span class="modal-title">Tải ứng dụng Monex</span>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+            </div>
+            <div class="modal-body-content">
+              <div class="modal-body-left">
+                <div class="modal-content-title">
+                  <span>Quét mã QR để tải ứng dụng Monex</span>
+                </div>
+                <div class="modal-content-qr">
+                  <img src="./images/footers/qrcode-app.png" alt="" />
+                </div>
+              </div>
+              <div class="modal-body-right">
+                <div class="modal-content-mobile">
+                  <div class="modal-mobile-title">
+                    <span>Vui lòng chọn nền tảng bạn đang sử dụng</span>
+                  </div>
+                </div>
+                <div class="modal-content-title">
+                  <span>hoặc xem trực tiếp tại</span>
+                </div>
+                <div class="modal-content-store">
+                  <a
+                    class="modal-store-icon"
+                    href="https://apps.apple.com/app/monex/id1548427331"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img src="images/illustrator/appstore-illu.png" alt="" />
+                  </a>
+                  <a
+                    class="modal-store-icon"
+                    href="https://play.google.com/store/apps/details?id=com.epayvn.monex"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img src="images/illustrator/ggplay-illu.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  End Modal -->
+
+    <!--  Header -->
+    <div id="m-header">
+      <div class="container-fluid p-0">
+        <header>
+          <!-- Nav sidebar  -->
+          <div
+            id="btn-toggler-small"
+            class="bs-canvas bs-canvas-anim bs-canvas-left position-fixed h-100"
+            data-overlay="false"
+            data-width="100%"
+          >
+            <header class="bs-canvas-header overflow-auto">
+              <button
+                type="button"
+                class="bs-canvas-close float-left close"
+                aria-label="Close"
+              >
+                <img
+                  src="./images/header/Dismiss.svg"
+                  alt="dismiss-header"
+                  id="dismiss-header"
+                />
+              </button>
+              <a href="/"
+                ><img
+                  src="./images/header/logo-monex.svg"
+                  alt="logo-text-header"
+                  class="logo-header"
+                />
+              </a>
+            </header>
+            <div class="bs-canvas-content">
+              <nav class="navbar p-0">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://home.monex.vn/gioi-thieu/"
+                    >
+                      <h6 class="mb-0">Về monex</h6>
+                      <span>
+                        <img src="images/icon/arrow-right.svg" alt="redirect" />
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">
+                      <h6 class="mb-0">Mua sắm</h6>
+                      <span>
+                        <img src="images/icon/arrow-right.svg" alt="redirect" />
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="hop-tac.html">
+                      <h6 class="mb-0">Hợp tác</h6>
+                      <span>
+                        <img src="images/icon/arrow-right.svg" alt="redirect" />
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link sidebar-dropdown"
+                      href="javascript:void(0)"
+                      id="tin-tuc-dropdown-sidebar"
+                    >
+                      <h6 class="mb-0">Tin tức</h6>
+                      <span>
+                        <img
+                          src="images/icon/chevron-down.svg"
+                          alt="redirect"
+                        />
+                      </span>
+                    </a>
+                    <ul
+                      class="sidebar-dropdown-menu"
+                      aria-labelledby="tin-tuc-dropdown-sidebar"
+                    >
+                      <li class="sidebar-dropdown-item">
+                        <a href="https://home.monex.vn/tin-tuc/ban-tin-monex/">
+                          <span> Bản tin Monex</span>
+                          <span>
+                            <img
+                              src="images/icon/arrow-right.svg"
+                              alt="redirect"
+                            /> </span
+                        ></a>
+                      </li>
+                      <li class="sidebar-dropdown-item">
+                        <a
+                          href="https://home.monex.vn/tin-tuc/chuyen-nha-monex/"
+                        >
+                          <span>Chuyện nhà Monex </span
+                          ><span>
+                            <img
+                              src="images/icon/arrow-right.svg"
+                              alt="redirect"
+                            /> </span
+                        ></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://home.monex.vn/hoi-dap/">
+                      <h6 class="mb-0">Hỏi đáp</h6>
+                      <span>
+                        <img src="images/icon/arrow-right.svg" alt="redirect" />
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link sidebar-dropdown"
+                      href="javascript:void(0)"
+                      id="blog-dropdown-sidebar"
+                    >
+                      <h6 class="sidebar-dropdown-toggle mb-0">Blog</h6>
+                      <span>
+                        <img
+                          src="images/icon/chevron-down.svg"
+                          alt="redirect"
+                        />
+                      </span>
+                    </a>
+                    <ul
+                      class="sidebar-dropdown-menu"
+                      aria-labelledby="blog-dropdown-sidebar"
+                    >
+                      <li class="sidebar-dropdown-item">
+                        <a
+                          href="https://home.monex.vn/blog/chuyen-dong-thi-truong/"
+                        >
+                          <span>Chuyển động thị trường</span
+                          ><span>
+                            <img
+                              src="images/icon/arrow-right.svg"
+                              alt="redirect"
+                            /> </span
+                        ></a>
+                      </li>
+                      <li class="sidebar-dropdown-item">
+                        <a
+                          href="https://home.monex.vn/blog/xu-huong-dau-tu-cho-ban/"
+                        >
+                          <span>Xu hướng đầu tư cho bạn</span>
+                          <span>
+                            <img
+                              src="images/icon/arrow-right.svg"
+                              alt="redirect"
+                            /> </span
+                        ></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <!--  Header menu    -->
+          <nav class="navbar-light bg-custom sticky-top" role="navigation">
+            <div class="container-fluid">
+              <div class="row menu">
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 menu-brand d-flex align-items-center"
+                >
+                  <div class="menu-toggler-small d-flex align-items-center">
+                    <button
+                      class="bs-offset-main bs-canvas-anim navbar-toggler"
+                      data-toggle="canvas"
+                      data-target="#btn-toggler-small"
+                      aria-expanded="false"
+                      aria-controls="btn-toggler-small"
+                    >
+                      <img src="./images/header/Menu.svg" alt="icon-toggler" />
+                    </button>
+                  </div>
+                  <a href="/"
+                    ><img
+                      src="./images/header/logo-monex.svg"
+                      alt="logo-text-header"
+                      class="logo-header"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 menu-list"
+                >
+                  <ul
+                    class="nav navbar-nav gap-2 flex-row flex-nowrap align-items-center"
+                  >
+                    <li class="nav-item">
+                      <a
+                        href="https://home.monex.vn/gioi-thieu/"
+                        class="nav-link"
+                        title="Giới thiệu"
+                      >
+                        <h6>Về monex</h6>
+                      </a>
+                      <div class="underline"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="https://home.monex.vn/gioi-thieu/"
+                        class="nav-link"
+                        title="Mua sắm"
+                      >
+                        <h6>Mua sắm</h6>
+                      </a>
+                      <div class="underline"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a href="hop-tac.html" class="nav-link" title="Hợp tác">
+                        <h6>Hợp tác</h6>
+                      </a>
+                      <div class="underline"></div>
+                    </li>
+                    <li class="nav-item dropdown" id="tin-tuc-dropdown">
+                      <a
+                        href="javascript:void(0)"
+                        class="nav-link"
+                        title="Tin tức"
+                      >
+                        <h6 class="dropdown-toggle">
+                          Tin tức<span>
+                            <img
+                              src="images/icon/chevron-down.svg"
+                              alt="redirect"
+                              class="chevron-header"
+                            />
+                          </span>
+                        </h6>
+                      </a>
+                      <div class="underline"></div>
+                      <ul
+                        class="s-dropdown-menu"
+                        aria-labelledby="tin-tuc-dropdown"
+                      >
+                        <li class="s-dropdown-item">
+                          <a href="https://home.monex.vn/tin-tuc/ban-tin-monex/"
+                            >Bản tin Monex</a
+                          >
+                        </li>
+                        <li class="s-dropdown-item">
+                          <a
+                            href="https://home.monex.vn/tin-tuc/chuyen-nha-monex/"
+                            >Chuyện nhà Monex</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="https://home.monex.vn/hoi-dap/"
+                        class="nav-link"
+                        title="Hỏi đáp"
+                      >
+                        <h6>Hỏi đáp</h6>
+                      </a>
+                      <div class="underline"></div>
+                    </li>
+                    <li class="nav-item dropdown" id="blog-dropdown">
+                      <a
+                        href="javascript:void(0)"
+                        class="nav-link"
+                        title="Tin tức"
+                      >
+                        <h6 class="dropdown-toggle">
+                          Blog
+                          <span>
+                            <img
+                              src="images/icon/chevron-down.svg"
+                              alt="redirect"
+                              class="chevron-header"
+                            />
+                          </span>
+                        </h6>
+                      </a>
+                      <div class="underline"></div>
+                      <ul
+                        class="s-dropdown-menu"
+                        aria-labelledby="blog-dropdown"
+                      >
+                        <li class="s-dropdown-item">
+                          <a
+                            href="https://home.monex.vn/blog/chuyen-dong-thi-truong/"
+                            >Chuyển động thị trường</a
+                          >
+                        </li>
+                        <li class="s-dropdown-item">
+                          <a
+                            href="https://home.monex.vn/blog/xu-huong-dau-tu-cho-ban/"
+                            >Xu hướng đầu tư cho bạn</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 menu-info d-flex justify-content-end"
+                >
+                  <ul
+                    class="nav navbar-nav flex-row flex-nowrap align-items-center float-right"
+                  >
+                    <li class="nav-item">
+                      <a
+                        href="tel:1900234583"
+                        class="nav-link contact me-3"
+                        title="Hỗ trợ"
+                        ><img
+                          src="./images/header/hotline.svg"
+                          alt="icon-contact"
+                        />
+                        <h6 class="mb-0">1900234583</h6>
+                      </a>
+                    </li>
+
+                    <li
+                      class="nav-item"
+                      data-bs-toggle="modal"
+                      data-bs-target="#myModal"
+                    >
+                      <a
+                        href="javascript:void(0)"
+                        class="nav-link header-download"
+                        title="Tải ứng dụng"
+                        ><img
+                          src="./images/header/Download.svg"
+                          alt="icon-download"
+                        />
+                        <h6 class="mb-0">Tải ứng dụng</h6>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <!-- END: Header -->
+
+    <!--    Main -->
+    <main id="m-main">
+      <!--   Banner   -->
+      <section class="m-banner container-fluid">
+        <div class="m-banner-container">
+          <div class="m-banner-content">
+            <article data-aos="fade-right">
+              <img
+                id="left-banner-illustrator-desktop"
+                class="banner-illustrator left-banner-illustrator"
+                src="images/illustrator/left-illu.png"
+                alt=""
+              />
+              <img
+                id="left-banner-illustrator-mobile"
+                class="banner-illustrator left-banner-illustrator"
+                src="images/illustrator/banner-left-illu-mobile.png"
+                alt=""
+              />
+            </article>
+            <article data-aos="fade-left" class="position-relative">
+              <img
+                id="right-banner-illustrator-desktop"
+                class="banner-illustrator right-banner-illustrator"
+                src="images/illustrator/right-illu.png"
+                alt=""
+              />
+              <img
+                id="right-banner-illustrator-mobile"
+                class="banner-illustrator right-banner-illustrator"
+                src="images/illustrator/banner-right-illu-mobile.png"
+                alt=""
+              />
+            </article>
+            <article id="middle-banner-content" class="text-center">
+              <div class="m-title-banner">
+                <div id="m-title-buy-now" data-aos="fade-right">
+                  <img
+                    class="m-banner-arrow"
+                    src="images/icon/banner-arrow-left.svg"
+                    alt=""
+                  />
+                  <h2>Mua trước</h2>
+                </div>
+                <div id="m-title-pay-later" data-aos="fade-left">
+                  <h2>Trả sau</h2>
+                  <img
+                    class="m-banner-arrow"
+                    src="images/icon/banner-arrow-right.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="m-slogan-banner">
+                <div class="m-slogan-banner-box">
+                  <h3>Xu hướng thanh toán thế hệ mới</h3>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div id="m-background-download-banner"></div>
+        <div class="m-download-banner">
+          <div
+            class="d-flex gap-2 gap-sm-2 gap-md-3 gap-lg-4 justify-content-center"
+          >
+            <a
+              href="https://play.google.com/store/apps/details?id=com.epayvn.monex"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="images/illustrator/ggplay-illu.png" alt="ggplay" />
+            </a>
+            <a
+              href="https://apps.apple.com/app/monex/id1548427331"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="images/illustrator/appstore-illu.png" alt="appstore" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--   End: Banner   -->
+
+      <!--   Content   -->
+      <section class="container-fluid p-0">
+        <div class="m-container">
+          <!--   BNPL Intro   -->
+          <article id="bnpl-intro">
+            <div
+              class="bnpl-intro-header"
+              data-aos="fade-up"
+              data-aos-easing="ease-out"
+              data-aos-duration="1100"
+            >
+              <h2 class="m-title-section">
+                Mua trước - Trả sau<br />Kiến tạo phong cách tài chính&nbsp;<br
+                  class="d-block d-sm-block d-md-none d-lg-none"
+                />thông minh
+              </h2>
+              <div class="m-hint-section">
+                Chia nhỏ giá trị đơn hàng thành 4 kỳ trả góp
+              </div>
+            </div>
+
+            <div class="m-bnpl-intro-features">
+              <ul
+                class="px-0 row row-cols-2 row-cols-xs-2 row-cols-md-3 row-cols-md-3 row-cols-lg-5 g-1 g-md-2 g-lg-2 justify-content-center"
+                data-aos="fade-up"
+                data-aos-easing="ease-out"
+                data-aos-duration="1200"
+              >
+                <li class="col">
+                  <div id="bnpl-feature-1" class="bnpl-feature">
+                    <img src="images/large-icon/Percent.svg" alt="" />
+                    <p>0% lãi<br />0% phí</p>
+                  </div>
+                </li>
+                <li class="col">
+                  <div id="bnpl-feature-2" class="bnpl-feature">
+                    <img src="images/large-icon/CalendarCheck.svg" alt="" />
+                    <p>
+                      Kỳ hạn linh hoạt <br />
+                      30 - 45 - 90 ngày
+                    </p>
+                  </div>
+                </li>
+                <li class="col">
+                  <div id="bnpl-feature-3" class="bnpl-feature">
+                    <img src="images/large-icon/Lightning.svg" alt="" />
+                    <p>Quy trình<br />nhanh gọn</p>
+                  </div>
+                </li>
+                <li class="col">
+                  <div id="bnpl-feature-4" class="bnpl-feature">
+                    <img src="images/large-icon/Heart.svg" alt="" />
+                    <p>Trải nghiệm<br />thân thiện</p>
+                  </div>
+                </li>
+                <li class="col">
+                  <div id="bnpl-feature-5" class="bnpl-feature">
+                    <img src="images/large-icon/ShieldCheck.svg" alt="" />
+                    <p>Minh bạch<br />Bảo mật</p>
+                  </div>
+                </li>
+              </ul>
+
+              <div
+                class="text-center mt-4 mt-lg-5"
+                data-aos="fade-up"
+                data-aos-easing="ease-out"
+                data-aos-duration="1300"
+              >
+                <a
+                  href="https://home.monex.vn/gioi-thieu/"
+                  type="button"
+                  class="m-btn m-btn-primary m-features"
+                >
+                  Tìm hiểu thêm
+                </a>
+              </div>
+            </div>
+          </article>
+          <!--  END: BNPL Intro    -->
+
+          <!--   For you   -->
+          <article id="for-you">
+            <div
+              data-aos="fade-up"
+              data-aos-easing="ease-out"
+              data-aos-duration="1100"
+            >
+              <h2 class="m-title-section">
+                Bạn có nhiều dự định&nbsp;<br
+                  class="d-block d-sm-block d-md-none d-lg-none"
+                />cho chính mình?&nbsp<br
+                  class="d-none d-sm-none d-md-block d-lg-block"
+                />
+                Cho những người&nbsp;<br
+                  class="d-block d-sm-block d-md-none d-lg-none"
+                />thương yêu?
+              </h2>
+              <div class="m-hint-section">Thực hiện ngay hôm nay</div>
+            </div>
+
+            <div class="m-bnpl-intro-features">
+              <ul
+                class="px-0 row row-cols-2 row-cols-xs-2 row-cols-md-3 row-cols-md-3 row-cols-lg-3 g-1 g-md-2 g-lg-2"
+                data-aos="fade-up"
+                data-aos-easing="ease-out"
+                data-aos-duration="1200"
+              >
+                <li class="col">
+                  <div id="bnpl-for-you-1" class="bnpl-for-you">
+                    <img src="images/small-icon/heart.svg" alt="" />
+                    <p>
+                      Chăm sóc&nbsp;<br
+                        class="d-block d-sm-block d-md-none d-lg-none"
+                      />sức khỏe
+                    </p>
+                  </div>
+                </li>
+                <li class="col">
+                  <div id="bnpl-for-you-2" class="bnpl-for-you">
+                    <img src="images/small-icon/edu.svg" alt="" />
+                    <p>Giáo dục</p>
+                  </div>
+                </li>
+                <li class="col">
+                  <div id="bnpl-for-you-3" class="bnpl-for-you">
+                    <img src="images/small-icon/beauti.svg" alt="" />
+                    <p>Làm đẹp</p>
+                  </div>
+                </li>
+                <li class="col">
+                  <div id="bnpl-for-you-4" class="bnpl-for-you">
+                    <img src="images/small-icon/shield.svg" alt="" />
+                    <p>Bảo hiểm</p>
+                  </div>
+                </li>
+                <li class="col">
+                  <div id="bnpl-for-you-5" class="bnpl-for-you">
+                    <img src="images/small-icon/media.svg" alt="" />
+                    <p>
+                      Dịch vụ&nbsp;<br
+                        class="d-block d-sm-block d-md-none d-lg-none"
+                      />giải trí
+                    </p>
+                  </div>
+                </li>
+                <li class="col">
+                  <div id="bnpl-for-you-6" class="bnpl-for-you">
+                    <img src="images/small-icon/computer.svg" alt="" />
+                    <p>Điện tử, Điện máy</p>
+                  </div>
+                </li>
+              </ul>
+
+              <div
+                class="text-center mt-4 mt-lg-5"
+                data-aos="fade-up"
+                data-aos-easing="ease-out"
+                data-aos-duration="1300"
+              >
+                <button type="button" class="m-btn m-btn-primary">
+                  Mua sắm ngay
+                </button>
+              </div>
+            </div>
+          </article>
+          <!--  END: For you  -->
+
+          <!--   Merchant   -->
+          <article id="bnpl-merchant">
+            <div
+              data-aos="fade-up"
+              data-aos-easing="ease-out"
+              data-aos-duration="1100"
+            >
+              <h2 class="m-title-section">
+                Thỏa thích mua sắm&nbsp;<br
+                  class="d-block d-sm-block d-md-none d-lg-none"
+                />- Thanh toán 4 kỳ
+              </h2>
+              <div class="m-hint-section">
+                Đa dạng Thương hiệu - Dẫn đầu xu hướng
+              </div>
+            </div>
+
+            <!--            <div class="m-bnpl-intro-features">-->
+            <!--              <div-->
+            <!--                data-aos="fade-up"-->
+            <!--                data-aos-easing="ease-out"-->
+            <!--                data-aos-duration="1200"-->
+            <!--              >-->
+            <!--                <ul-->
+            <!--                  class="px-0 row row-cols-3 row-cols-xs-3 row-cols-md-3 row-cols-md-3 row-cols-lg-5 g-0 g-md-2 g-lg-2 gap-2 gap-md-0 gap-lg-0 justify-content-center"-->
+            <!--                >-->
+            <!--                  <li class="col bnpl-merchant-col">-->
+            <!--                    <div id="bnpl-merchant-1" class="bnpl-merchant">-->
+            <!--                      <img src="images/merchant/Samsung.png" alt="" />-->
+            <!--                    </div>-->
+            <!--                  </li>-->
+            <!--                  <li class="col bnpl-merchant-col">-->
+            <!--                    <div id="bnpl-merchant-2" class="bnpl-merchant">-->
+            <!--                      <img src="images/merchant/Xiaomi.png" alt="" />-->
+            <!--                    </div>-->
+            <!--                  </li>-->
+            <!--                  <li class="col bnpl-merchant-col">-->
+            <!--                    <div id="bnpl-merchant-3" class="bnpl-merchant">-->
+            <!--                      <img src="images/merchant/Nike.png" alt="" />-->
+            <!--                    </div>-->
+            <!--                  </li>-->
+            <!--                  <li class="col bnpl-merchant-col">-->
+            <!--                    <div id="bnpl-merchant-4" class="bnpl-merchant">-->
+            <!--                      <img src="images/merchant/Uniqlo.png" alt="" />-->
+            <!--                    </div>-->
+            <!--                  </li>-->
+            <!--                  <li class="col bnpl-merchant-col">-->
+            <!--                    <div id="bnpl-merchant-5" class="bnpl-merchant">-->
+            <!--                      <img src="images/merchant/Decathlon.png" alt="" />-->
+            <!--                    </div>-->
+            <!--                  </li>-->
+            <!--                </ul>-->
+            <!--              </div>-->
+
+            <!--              <div-->
+            <!--                class="text-center mt-4 mt-sm-4 mt-md-5 mt-lg-5 d-flex justify-content-center gap-3"-->
+            <!--                data-aos="fade-up"-->
+            <!--                data-aos-easing="ease-out"-->
+            <!--                data-aos-duration="1300"-->
+            <!--              >-->
+            <!--                <button type="button" class="m-btn m-btn-primary">-->
+            <!--                  Khám phá ngay-->
+            <!--                </button>-->
+            <!--                <button type="button" class="m-btn m-btn-secondary">-->
+            <!--                  Trở thành đối tác-->
+            <!--                </button>-->
+            <!--              </div>-->
+            <!--            </div>-->
+          </article>
+          <!--  END: Merchant  -->
+
+          <!--  Bnpl Step   -->
+          <article id="bnpl-step">
+            <div
+              data-aos="fade-up"
+              data-aos-easing="ease-out"
+              data-aos-duration="1100"
+            >
+              <h2 class="m-title-section">
+                6 bước đơn giản&nbsp;<br
+                  class="d-block d-sm-block d-md-none d-lg-none"
+                />- Trải nghiệm tức thì
+              </h2>
+            </div>
+
+            <div
+              class="m-bnpl-intro-features"
+              data-aos="fade-up"
+              data-aos-easing="ease-out"
+              data-aos-duration="1200"
+            >
+              <div class="m-bnpl-step-container">
+                <div class="m-bnpl-step-content">
+                  <article class="bnpl-step-list-desktop">
+                    <img
+                      src="images/illustrator/bg-step.png"
+                      class="bnpl-step-bg"
+                      alt=""
+                    />
+                    <img
+                      id="bnpl-step-1"
+                      class="bnpl-step-illustrator"
+                      src="images/illustrator/bnpl-step-1.png"
+                      alt=""
+                    />
+                    <img
+                      id="bnpl-step-2"
+                      class="bnpl-step-illustrator"
+                      src="images/illustrator/bnpl-step-2.png"
+                      alt=""
+                    />
+                    <img
+                      id="bnpl-step-3"
+                      class="bnpl-step-illustrator"
+                      src="images/illustrator/bnpl-step-3.png"
+                      alt=""
+                    />
+                    <img
+                      id="bnpl-step-4"
+                      class="bnpl-step-illustrator"
+                      src="images/illustrator/bnpl-step-4.png"
+                      alt=""
+                    />
+                    <img
+                      id="bnpl-step-5"
+                      class="bnpl-step-illustrator"
+                      src="images/illustrator/bnpl-step-5.png"
+                      alt=""
+                    />
+                    <img
+                      id="bnpl-step-6"
+                      class="bnpl-step-illustrator"
+                      src="images/illustrator/bnpl-step-6.png"
+                      alt=""
+                    />
+                  </article>
+                  <article class="bnpl-step-list-desktop">
+                    <ul class="bnpl-step-list">
+                      <li class="bnpl-step-item-first-child"></li>
+                      <li
+                        class="bnpl-step-item bnpl-step-item-active"
+                        data-aos="fade-left"
+                        data-aos-duration="600"
+                      >
+                        <div class="bnpl-item-order">
+                          <p>1</p>
+                        </div>
+                        <div class="bnpl-item-title">
+                          <p>Tải ứng dụng Monex</p>
+                        </div>
+                      </li>
+                      <li
+                        class="bnpl-step-item"
+                        data-aos="fade-left"
+                        data-aos-duration="800"
+                      >
+                        <div class="bnpl-item-order"><p>2</p></div>
+                        <div class="bnpl-item-title">
+                          <p>Chọn Nhà bán → Quét mã thanh toán</p>
+                        </div>
+                      </li>
+                      <li
+                        class="bnpl-step-item"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                      >
+                        <div class="bnpl-item-order"><p>3</p></div>
+                        <div class="bnpl-item-title">
+                          <p>Xác nhận lộ trình trả sau</p>
+                        </div>
+                      </li>
+                      <li
+                        class="bnpl-step-item"
+                        data-aos="fade-left"
+                        data-aos-duration="1200"
+                      >
+                        <div class="bnpl-item-order"><p>4</p></div>
+                        <div class="bnpl-item-title">
+                          <p>Nhập thông tin, Monex xét duyệt nhanh chóng</p>
+                        </div>
+                      </li>
+                      <li
+                        class="bnpl-step-item"
+                        data-aos="fade-left"
+                        data-aos-duration="1400"
+                      >
+                        <div class="bnpl-item-order"><p>5</p></div>
+                        <div class="bnpl-item-title">
+                          <p>Thanh toán 25% giá trị đơn hàng</p>
+                        </div>
+                      </li>
+                      <li
+                        class="bnpl-step-item"
+                        data-aos="fade-left"
+                        data-aos-duration="1600"
+                      >
+                        <div class="bnpl-item-order"><p>6</p></div>
+                        <div class="bnpl-item-title">
+                          <p>
+                            Dùng ngay sản phẩm/dịch vụ. Quản lý khoản trả sau
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="text-center bnpl-btn-download">
+                      <button
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#myModal"
+                        class="m-btn m-btn-primary d-flex justify-content-center gap-2"
+                      >
+                        <img
+                          src="./images/header/Download.svg"
+                          alt="icon-download"
+                        />
+                        <h6 class="my-auto">Tải ứng dụng</h6>
+                      </button>
+                    </div>
+                  </article>
+                  <article class="bnpl-step-list-mobile">
+                    <ul class="bnpl-step-list">
+                      <li class="bnpl-step-item-first-child"></li>
+                      <li
+                        class="bnpl-step-item bnpl-step-item-active"
+                        data-aos="fade-left"
+                        data-aos-duration="600"
+                      >
+                        <a
+                          class="step-dropdown sidebar-dropdown"
+                          href="javascript:void(0)"
+                          id="bnpl-step-1-dropdown"
+                        >
+                          <div class="bnpl-item-order">
+                            <p>1</p>
+                          </div>
+                          <div class="bnpl-item-title">
+                            <p>Tải ứng dụng Monex</p>
+                          </div>
+                          <span class="redirect-step-bnpl">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                class="m-redirect-icon"
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M2.86201 5.52863C3.12236 5.26829 3.54447 5.26829 3.80482 5.52863L8.00008 9.72391L12.1953 5.52863C12.4557 5.26829 12.8778 5.26829 13.1381 5.52863C13.3985 5.78899 13.3985 6.21109 13.1381 6.47145L8.47148 11.1381C8.21115 11.3984 7.78901 11.3984 7.52868 11.1381L2.86201 6.47145C2.60166 6.21109 2.60166 5.78899 2.86201 5.52863Z"
+                                fill="#8E8E93"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                        <div
+                          class="sidebar-dropdown-menu bnpl-step-dropdown"
+                          aria-labelledby="bnpl-step-1-dropdown"
+                        >
+                          <img
+                            class="bnpl-step-moblie"
+                            src="images/illustrator/bnpl-step-1.png"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                      <li
+                        class="bnpl-step-item"
+                        data-aos="fade-left"
+                        data-aos-duration="800"
+                      >
+                        <a
+                          class="step-dropdown sidebar-dropdown"
+                          href="javascript:void(0)"
+                          id="bnpl-step-2-dropdown"
+                        >
+                          <div class="bnpl-item-order"><p>2</p></div>
+                          <div class="bnpl-item-title">
+                            <p>Chọn Nhà bán → Quét mã thanh toán</p>
+                          </div>
+                          <span class="redirect-step-bnpl">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                class="m-redirect-icon"
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M2.86201 5.52863C3.12236 5.26829 3.54447 5.26829 3.80482 5.52863L8.00008 9.72391L12.1953 5.52863C12.4557 5.26829 12.8778 5.26829 13.1381 5.52863C13.3985 5.78899 13.3985 6.21109 13.1381 6.47145L8.47148 11.1381C8.21115 11.3984 7.78901 11.3984 7.52868 11.1381L2.86201 6.47145C2.60166 6.21109 2.60166 5.78899 2.86201 5.52863Z"
+                                fill="#8E8E93"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                        <div
+                          class="sidebar-dropdown-menu bnpl-step-dropdown"
+                          aria-labelledby="bnpl-step-2-dropdown"
+                        >
+                          <img
+                            class="bnpl-step-moblie"
+                            src="images/illustrator/bnpl-step-2.png"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                      <li
+                        class="bnpl-step-item"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                      >
+                        <a
+                          class="step-dropdown sidebar-dropdown"
+                          href="javascript:void(0)"
+                          id="bnpl-step-3-dropdown"
+                        >
+                          <div class="bnpl-item-order"><p>3</p></div>
+                          <div class="bnpl-item-title">
+                            <p>Xác nhận lộ trình trả sau</p>
+                          </div>
+                          <span class="redirect-step-bnpl">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                class="m-redirect-icon"
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M2.86201 5.52863C3.12236 5.26829 3.54447 5.26829 3.80482 5.52863L8.00008 9.72391L12.1953 5.52863C12.4557 5.26829 12.8778 5.26829 13.1381 5.52863C13.3985 5.78899 13.3985 6.21109 13.1381 6.47145L8.47148 11.1381C8.21115 11.3984 7.78901 11.3984 7.52868 11.1381L2.86201 6.47145C2.60166 6.21109 2.60166 5.78899 2.86201 5.52863Z"
+                                fill="#8E8E93"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                        <div
+                          class="sidebar-dropdown-menu bnpl-step-dropdown"
+                          aria-labelledby="bnpl-step-3-dropdown"
+                        >
+                          <img
+                            class="bnpl-step-moblie"
+                            src="images/illustrator/bnpl-step-3.png"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                      <li
+                        class="bnpl-step-item"
+                        data-aos="fade-left"
+                        data-aos-duration="1200"
+                      >
+                        <a
+                          class="step-dropdown sidebar-dropdown"
+                          href="javascript:void(0)"
+                          id="bnpl-step-4-dropdown"
+                        >
+                          <div class="bnpl-item-order"><p>4</p></div>
+                          <div class="bnpl-item-title">
+                            <p>Nhập thông tin, Monex xét duyệt nhanh chóng</p>
+                          </div>
+                          <span class="redirect-step-bnpl">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                class="m-redirect-icon"
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M2.86201 5.52863C3.12236 5.26829 3.54447 5.26829 3.80482 5.52863L8.00008 9.72391L12.1953 5.52863C12.4557 5.26829 12.8778 5.26829 13.1381 5.52863C13.3985 5.78899 13.3985 6.21109 13.1381 6.47145L8.47148 11.1381C8.21115 11.3984 7.78901 11.3984 7.52868 11.1381L2.86201 6.47145C2.60166 6.21109 2.60166 5.78899 2.86201 5.52863Z"
+                                fill="#8E8E93"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                        <div
+                          class="sidebar-dropdown-menu bnpl-step-dropdown"
+                          aria-labelledby="bnpl-step-4-dropdown"
+                        >
+                          <img
+                            class="bnpl-step-moblie"
+                            src="images/illustrator/bnpl-step-4.png"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                      <li
+                        class="bnpl-step-item"
+                        data-aos="fade-left"
+                        data-aos-duration="1400"
+                      >
+                        <a
+                          class="step-dropdown sidebar-dropdown"
+                          href="javascript:void(0)"
+                          id="bnpl-step-5-dropdown"
+                        >
+                          <div class="bnpl-item-order"><p>5</p></div>
+                          <div class="bnpl-item-title">
+                            <p>Thanh toán 25% giá trị đơn hàng</p>
+                          </div>
+                          <span class="redirect-step-bnpl">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                class="m-redirect-icon"
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M2.86201 5.52863C3.12236 5.26829 3.54447 5.26829 3.80482 5.52863L8.00008 9.72391L12.1953 5.52863C12.4557 5.26829 12.8778 5.26829 13.1381 5.52863C13.3985 5.78899 13.3985 6.21109 13.1381 6.47145L8.47148 11.1381C8.21115 11.3984 7.78901 11.3984 7.52868 11.1381L2.86201 6.47145C2.60166 6.21109 2.60166 5.78899 2.86201 5.52863Z"
+                                fill="#8E8E93"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                        <div
+                          class="sidebar-dropdown-menu bnpl-step-dropdown"
+                          aria-labelledby="bnpl-step-5-dropdown"
+                        >
+                          <img
+                            class="bnpl-step-moblie"
+                            src="images/illustrator/bnpl-step-5.png"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                      <li
+                        class="bnpl-step-item"
+                        data-aos="fade-left"
+                        data-aos-duration="1600"
+                      >
+                        <a
+                          class="step-dropdown sidebar-dropdown"
+                          href="javascript:void(0)"
+                          id="bnpl-step-6-dropdown"
+                        >
+                          <div class="bnpl-item-order"><p>6</p></div>
+                          <div class="bnpl-item-title">
+                            <p>
+                              Dùng ngay sản phẩm/dịch vụ. Quản lý khoản trả sau
+                            </p>
+                          </div>
+                          <span class="redirect-step-bnpl">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                class="m-redirect-icon"
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M2.86201 5.52863C3.12236 5.26829 3.54447 5.26829 3.80482 5.52863L8.00008 9.72391L12.1953 5.52863C12.4557 5.26829 12.8778 5.26829 13.1381 5.52863C13.3985 5.78899 13.3985 6.21109 13.1381 6.47145L8.47148 11.1381C8.21115 11.3984 7.78901 11.3984 7.52868 11.1381L2.86201 6.47145C2.60166 6.21109 2.60166 5.78899 2.86201 5.52863Z"
+                                fill="#8E8E93"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                        <div
+                          class="sidebar-dropdown-menu bnpl-step-dropdown"
+                          aria-labelledby="bnpl-step-6-dropdown"
+                        >
+                          <img
+                            class="bnpl-step-moblie"
+                            src="images/illustrator/bnpl-step-6.png"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="text-center bnpl-btn-download">
+                      <button
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#myModal"
+                        class="m-btn m-btn-primary d-flex justify-content-center gap-2"
+                      >
+                        <img
+                          src="./images/header/Download.svg"
+                          alt="icon-download"
+                        />
+                        <h6 class="my-auto">Tải ứng dụng</h6>
+                      </button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!--  END: Bnpl Step  -->
+        </div>
+      </section>
+      <!--   End: Content   -->
+
+      <!--   Contact Us   -->
+      <section class="m-contact container-fluid">
+        <div class="m-container w-100">
+          <div
+            class="mt-5"
+            data-aos="fade-up"
+            data-aos-easing="ease-out"
+            data-aos-duration="1100"
+          >
+            <h2 class="m-title-section">
+              Cùng cải tiến - Cùng phát triển <br />
+              Nắm bắt xu hướng thanh toán&nbsp;<br
+                class="d-block d-sm-block d-md-none d-lg-none"
+              />thế hệ mới
+            </h2>
+            <div class="m-hint-section">Monex đồng hành cùng Nhà bán</div>
+          </div>
+
+          <div>
+            <div class="m-contact-content">
+              <div class="m-contact-img">
+                <img src="./images/illustrator/contact-us.png" alt="" />
+              </div>
+
+              <div
+                class="m-contact-checkmark"
+                data-aos="fade-up"
+                data-aos-easing="ease-out"
+                data-aos-duration="1200"
+              >
+                <div class="m-checkmark">
+                  <div class="m-checkmark-item">
+                    <div class="m-checkmark-logo">
+                      <span
+                        ><img src="./images/icon/Checkmark-Circle.svg" alt=""
+                      /></span>
+                    </div>
+                    <div class="m-checkmark-title">
+                      <span>Thiết lập đơn giản</span>
+                    </div>
+                  </div>
+
+                  <div class="m-checkmark-item">
+                    <div class="m-checkmark-logo">
+                      <span
+                        ><img src="./images/icon/Checkmark-Circle.svg" alt=""
+                      /></span>
+                    </div>
+                    <div class="m-checkmark-title">
+                      <span>Hỗ trợ thanh toán đa kênh</span>
+                    </div>
+                  </div>
+
+                  <div class="m-checkmark-item">
+                    <div class="m-checkmark-logo">
+                      <span
+                        ><img src="./images/icon/Checkmark-Circle.svg" alt=""
+                      /></span>
+                    </div>
+                    <div class="m-checkmark-title">
+                      <span>Tối ưu hóa trải nghiệm mua sắm</span>
+                    </div>
+                  </div>
+
+                  <div class="m-checkmark-item">
+                    <div class="m-checkmark-logo">
+                      <span
+                        ><img src="./images/icon/Checkmark-Circle.svg" alt=""
+                      /></span>
+                    </div>
+                    <div class="m-checkmark-title">
+                      <span>Gia tăng tỉ lệ chuyển đổi đơn hàng</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="m-btn-adv">
+                  <button type="button" class="m-btn m-btn-secondary">
+                    NHẬN TƯ VẤN
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--   End: Contact Us   -->
+    </main>
+
+    <!--   Footer   -->
+    <footer class="m-footer container-fluid">
+      <div class="m-sub-email">
+        <input
+          type="email"
+          id="email"
+          name="email-receive"
+          pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+          title="Hãy nhập email của bạn"
+          required
+          placeholder="Email nhận thông báo ưu đãi ..."
+        />
+        <button type="button" id="receive-noti">Nhận thông báo</button>
+      </div>
+
+      <div class="m-logo">
+        <div class="m-logo-img">
+          <span><img src="./images/icon/Logo-Monex.svg" alt="" /></span>
+        </div>
+        <div class="m-logo-title">
+          <span class="logo-description"
+            >Nền tảng công nghệ kiến tạo phong cách mua sắm thông minh</span
+          >
+        </div>
+      </div>
+
+      <div class="m-about-me-container">
+        <div class="m-about-me">
+          <div class="m-step-social">
+            <div class="m-about-text">
+              <div class=""><span>Kết nối với Monex</span></div>
+            </div>
+
+            <div class="m-social-icon">
+              <div>
+                <a
+                  href="https://www.facebook.com/monexvn/"
+                  target="_blank"
+                  rel="noopener"
+                  ><img src="./images/icon/Facebook.svg" alt=""
+                /></a>
+              </div>
+              <!--              <div>-->
+              <!--                <a-->
+              <!--                  href="https://zalo.me/2848902721585176437"-->
+              <!--                  target="_blank"-->
+              <!--                  rel="noopener"-->
+              <!--                ><img src="./images/icon/Zalo.svg" alt=""-->
+              <!--                /></a>-->
+              <!--              </div>-->
+              <!--              <div>-->
+              <!--                <a-->
+              <!--                  href="https://www.youtube.com/channel/UC92hkaZycui0Wd4GUrhSL8A"-->
+              <!--                  target="_blank"-->
+              <!--                  rel="noopener"-->
+              <!--                ><img src="./images/icon/Youtube.svg" alt=""-->
+              <!--                /></a>-->
+              <!--              </div>-->
+              <!--              <div>-->
+              <!--                <a href="javascript:void(0)" target="_blank" rel="noopener"-->
+              <!--                ><img src="./images/icon/Linkedin.svg" alt=""-->
+              <!--                /></a>-->
+              <!--              </div>-->
+              <div>
+                <a
+                  href="https://www.tiktok.com/@monexvn"
+                  target="_blank"
+                  rel="noopener"
+                  ><img src="./images/icon/Tiktok.svg" alt=""
+                /></a>
+              </div>
+            </div>
+
+            <div class="m-connect-email">
+              <span class="m-about-text">Email</span>
+              <span class="m-email-title">support@monex.vn</span>
+            </div>
+          </div>
+
+          <div class="m-step-about-me">
+            <div class="m-about-text">
+              <div class="m-text-list"><span>Danh mục</span></div>
+            </div>
+
+            <div class="m-about-me-list">
+              <div class="m-list-item">
+                <a href="https://home.monex.vn/gioi-thieu/"
+                  ><span>Về Monex</span></a
+                >
+              </div>
+              <div class="m-list-item">
+                <a href="javascript:void(0)"><span>Mua sắm</span></a>
+              </div>
+              <div class="m-list-item">
+                <a href="hop-tac.html"><span>Hợp tác</span></a>
+              </div>
+              <div class="m-list-item">
+                <a href="https://home.monex.vn/tin-tuc/"
+                  ><span>Tin tức</span></a
+                >
+              </div>
+              <div class="m-list-item">
+                <a href="https://home.monex.vn/hoi-dap/"
+                  ><span>Hỏi đáp</span></a
+                >
+              </div>
+              <div class="m-list-item">
+                <a href="https://home.monex.vn/blog/"><span>Blog</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-step-download">
+            <div class="m-about-text">
+              <div class="m-text-list"><span>Tải ứng dụng Monex</span></div>
+            </div>
+
+            <div class="m-download-app">
+              <div class="m-download-qr">
+                <img src="./images/footers/qrcode-app.png" alt="" />
+              </div>
+
+              <div class="m-download-store">
+                <div class="m-appstore">
+                  <a
+                    href="https://apps.apple.com/app/monex/id1548427331"
+                    target="_blank"
+                    rel="noopener"
+                    ><img src="./images/footers/Appstore.png" alt=""
+                  /></a>
+                </div>
+                <div class="m-ggplay">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.epayvn.monex"
+                    target="_blank"
+                    rel="noopener"
+                    ><img src="./images/footers/Google-Play.png" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-footer-policy">
+        <div class="m-policy-content">
+          <div class="m-policy-title">
+            <span>Tuyên bố từ chối trách nhiệm</span>
+          </div>
+          <div class="m-policy-desc">
+            <span
+              >MONEX là một công ty công nghệ, cung cấp giải pháp đáp ứng nhu
+              cầu mua sắm của người dùng. MONEX có thể kết nối với các nhà cung
+              cấp dịch vụ thanh toán, giao hàng... để gia tăng tiện ích cho bạn
+              khi thực hiện các hoạt động mua sắm. Chúng tôi không trực tiếp
+              cung cấp các dịch vụ gia tăng tiện ích nêu trên, và cũng không
+              cung cấp dịch vụ tín dụng hoặc dịch vụ ngân hàng. Do đó, khi bạn
+              lựa chọn sử dung bất cứ dịch vụ nào được cung cấp bởi các bên thứ
+              ba đó, chúng tôi sẽ không chịu trách nhiệm đối với chất lượng sản
+              phẩm/dịch vụ mà họ cung cấp cho bạn cũng như các tranh chấp giữa
+              bạn và các nhà cung cấp đó.</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="m-footer-content">
+        <div class="m-sub-info">
+          <div class="m-sub-info-title">
+            <div class="m-info-company">
+              <span
+                >Địa chỉ liên hệ: Công ty cổ phần Monex, Tầng 5, Tòa nhà 389 Đê
+                La Thành, Ba Đình, Hà Nội</span
+              >
+            </div>
+            <div class="m-info-policy-terms">
+              <span>
+                <a class="text-decoration-none" href="dieu-khoan-su-dung.html"
+                  >Điều khoản & Điều kiện sử dụng</a
+                >
+              </span>
+              <span>
+                <a
+                  class="text-decoration-none"
+                  href="chinh-sach-quyen-rieng-tu.html"
+                  >Chính sách & Bảo mật</a
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--   End Footer   -->
+    <script type="module" src="./javascripts/libs/bnpl-step.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Chính sách & Bảo mật - Monex</title>
+    <script>
+      let metaOgUrl = document.createElement("meta");
+      metaOgUrl.setAttribute("property", "og:url");
+      metaOgUrl.content = document.location;
+      document.getElementsByTagName("head")[0].appendChild(metaOgUrl);
+    </script>
+    <link
+      rel="stylesheet"
+      href="./stylesheets/css/chinh-sach-quyen-rieng-tu.css"
+    />
+  </head>
+  <body>
+    <!--  Modal  -->
+
+    <!--  Modal noti success -->
+    <div
+      class="modal"
+      id="myModal-receive-email-success"
+      data-backdrop="keyboard"
+      role="dialog"
+      tabindex="-1"
+      aria-labelledby="myModalLabel-04"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="receive-email-noti-success">
+            <div class="receive-email-modal-content">
+              <div class="receive-email-modal-checkmark">
+                <img src="./images/icon/noti-success.svg" alt="" />
+              </div>
+              <div class="receive-email-content-title">
+                <span>Thành công</span>
+              </div>
+              <div class="receive-email-content-desc">
+                <span>Đăng ký nhận thông báo thành công.</span>
+              </div>
+            </div>
+            <div class="receive-email-modal-submit" data-bs-dismiss="modal">
+              <a href="javascript:void(0)">Xác nhận</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  End Modal noti success -->
+
+    <!--  Modal noti fail -->
+    <div
+      class="modal"
+      id="myModal-receive-email-fail"
+      data-backdrop="keyboard"
+      role="dialog"
+      tabindex="-1"
+      aria-labelledby="myModalLabel-03"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="receive-email-noti-fail">
+            <div class="receive-email-modal-content">
+              <div class="receive-email-modal-checkmark">
+                <img src="./images/icon/noti-fail.svg" alt="" />
+              </div>
+              <div class="receive-email-content-title">
+                <span>Thất bại</span>
+              </div>
+              <div class="receive-email-content-desc">
+                <span>Đăng kí nhận thông báo thất bại. Vui lòng thử lại.</span>
+              </div>
+            </div>
+            <div class="receive-email-modal-submit" data-bs-dismiss="modal">
+              <a href="javascript:void(0)">Xác nhận</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="email-fail"
+      data-backdrop="keyboard"
+      role="dialog"
+      tabindex="-1"
+      aria-labelledby="myModalLabel-02"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="receive-email-noti-fail">
+            <div class="receive-email-modal-content">
+              <div class="receive-email-modal-checkmark">
+                <img src="./images/icon/noti-fail.svg" alt="" />
+              </div>
+              <div class="receive-email-content-title">
+                <span>Thất bại</span>
+              </div>
+              <div class="receive-email-content-desc">
+                <span>Vui lòng nhập đúng định dạng email.</span>
+              </div>
+            </div>
+            <div class="receive-email-modal-submit" data-bs-dismiss="modal">
+              <a href="javascript:void(0)">Xác nhận</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  End Modal noti fail -->
+
+    <!--  Modal download  -->
+    <div
+      class="modal"
+      id="myModal"
+      data-backdrop="keyboard"
+      role="dialog"
+      tabindex="-1"
+      aria-labelledby="myModalLabel-01"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-c-tabs">
+            <div class="modal-header">
+              <div class="modal-header-title">
+                <div class="btn-download">
+                  <img src="./images/icon/modal-download-icon.svg" alt="" />
+                </div>
+                <span class="modal-title">Tải ứng dụng Monex</span>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+            </div>
+            <div class="modal-body-content">
+              <div class="modal-body-left">
+                <div class="modal-content-title">
+                  <span>Quét mã QR để tải ứng dụng Monex</span>
+                </div>
+                <div class="modal-content-qr">
+                  <img src="./images/footers/qrcode-app.png" alt="" />
+                </div>
+              </div>
+              <div class="modal-body-right">
+                <div class="modal-content-mobile">
+                  <div class="modal-mobile-title">
+                    <span>Vui lòng chọn nền tảng bạn đang sử dụng</span>
+                  </div>
+                </div>
+                <div class="modal-content-title">
+                  <span>hoặc xem trực tiếp tại</span>
+                </div>
+                <div class="modal-content-store">
+                  <a
+                    class="modal-store-icon"
+                    href="https://apps.apple.com/app/monex/id1548427331"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img src="images/illustrator/appstore-illu.png" alt="" />
+                  </a>
+                  <a
+                    class="modal-store-icon"
+                    href="https://play.google.com/store/apps/details?id=com.epayvn.monex"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img src="images/illustrator/ggplay-illu.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  End Modal -->
+
+    <!--  Header -->
+    <div id="m-header">
+      <div class="container-fluid p-0">
+        <header>
+          <!-- Nav sidebar  -->
+          <div
+            id="btn-toggler-small"
+            class="bs-canvas bs-canvas-anim bs-canvas-left position-fixed h-100"
+            data-overlay="false"
+            data-width="100%"
+          >
+            <header class="bs-canvas-header overflow-auto">
+              <button
+                type="button"
+                class="bs-canvas-close float-left close"
+                aria-label="Close"
+              >
+                <img
+                  src="./images/header/Dismiss.svg"
+                  alt="dismiss-header"
+                  id="dismiss-header"
+                />
+              </button>
+              <a href="/"
+                ><img
+                  src="./images/header/logo-monex.svg"
+                  alt="logo-text-header"
+                  class="logo-header"
+                />
+              </a>
+            </header>
+            <div class="bs-canvas-content">
+              <nav class="navbar p-0">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://home.monex.vn/gioi-thieu/"
+                    >
+                      <h6 class="mb-0">Về monex</h6>
+                      <span>
+                        <img src="images/icon/arrow-right.svg" alt="redirect" />
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">
+                      <h6 class="mb-0">Mua sắm</h6>
+                      <span>
+                        <img src="images/icon/arrow-right.svg" alt="redirect" />
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="hop-tac.html">
+                      <h6 class="mb-0">Hợp tác</h6>
+                      <span>
+                        <img src="images/icon/arrow-right.svg" alt="redirect" />
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link sidebar-dropdown"
+                      href="javascript:void(0)"
+                    >
+                      <h6 class="mb-0">Tin tức</h6>
+                      <span>
+                        <img
+                          src="images/icon/chevron-down.svg"
+                          alt="redirect"
+                        />
+                      </span>
+                    </a>
+                    <ul
+                      class="sidebar-dropdown-menu"
+                      aria-labelledby="tin-tuc-dropdown-sidebar"
+                    >
+                      <li class="sidebar-dropdown-item">
+                        <a href="https://home.monex.vn/tin-tuc/ban-tin-monex/">
+                          <span> Bản tin Monex</span>
+                          <span>
+                            <img
+                              src="images/icon/arrow-right.svg"
+                              alt="redirect"
+                            /> </span
+                        ></a>
+                      </li>
+                      <li class="sidebar-dropdown-item">
+                        <a
+                          href="https://home.monex.vn/tin-tuc/chuyen-nha-monex/"
+                        >
+                          <span>Chuyện nhà Monex </span
+                          ><span>
+                            <img
+                              src="images/icon/arrow-right.svg"
+                              alt="redirect"
+                            /> </span
+                        ></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://home.monex.vn/hoi-dap/">
+                      <h6 class="mb-0">Hỏi đáp</h6>
+                      <span>
+                        <img src="images/icon/arrow-right.svg" alt="redirect" />
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link sidebar-dropdown"
+                      href="javascript:void(0)"
+                      id="tin-tuc-dropdown-sidebar"
+                    >
+                      <h6 class="sidebar-dropdown-toggle mb-0">Blog</h6>
+                      <span>
+                        <img
+                          src="images/icon/chevron-down.svg"
+                          alt="redirect"
+                        />
+                      </span>
+                    </a>
+                    <ul
+                      class="sidebar-dropdown-menu"
+                      aria-labelledby="tin-tuc-dropdown-sidebar"
+                    >
+                      <li class="sidebar-dropdown-item">
+                        <a
+                          href="https://home.monex.vn/blog/chuyen-dong-thi-truong/"
+                        >
+                          <span>Chuyển động thị trường</span
+                          ><span>
+                            <img
+                              src="images/icon/arrow-right.svg"
+                              alt="redirect"
+                            /> </span
+                        ></a>
+                      </li>
+                      <li class="sidebar-dropdown-item">
+                        <a
+                          href="https://home.monex.vn/blog/xu-huong-dau-tu-cho-ban/"
+                        >
+                          <span>Xu hướng đầu tư cho bạn</span>
+                          <span>
+                            <img
+                              src="images/icon/arrow-right.svg"
+                              alt="redirect"
+                            /> </span
+                        ></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <!--  Header menu    -->
+          <nav class="navbar-light bg-custom sticky-top" role="navigation">
+            <div class="container-fluid">
+              <div class="row menu">
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 menu-brand d-flex align-items-center"
+                >
+                  <div class="menu-toggler-small d-flex align-items-center">
+                    <button
+                      class="bs-offset-main bs-canvas-anim navbar-toggler"
+                      data-toggle="canvas"
+                      data-target="#btn-toggler-small"
+                      aria-expanded="false"
+                      aria-controls="btn-toggler-small"
+                    >
+                      <img src="./images/header/Menu.svg" alt="icon-toggler" />
+                    </button>
+                  </div>
+                  <a href="/"
+                    ><img
+                      src="./images/header/logo-monex.svg"
+                      alt="logo-text-header"
+                      class="logo-header"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 menu-list"
+                >
+                  <ul
+                    class="nav navbar-nav gap-2 flex-row flex-nowrap align-items-center"
+                  >
+                    <li class="nav-item">
+                      <a
+                        href="https://home.monex.vn/gioi-thieu/"
+                        class="nav-link"
+                        title="Giới thiệu"
+                      >
+                        <h6>Về monex</h6>
+                      </a>
+                      <div class="underline"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="https://home.monex.vn/gioi-thieu/"
+                        class="nav-link"
+                        title="Mua sắm"
+                      >
+                        <h6>Mua sắm</h6>
+                      </a>
+                      <div class="underline"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="hop-tac.html"
+                        class="nav-link"
+                        title="Hợp tác"
+                      >
+                        <h6>Hợp tác</h6>
+                      </a>
+                      <div class="underline"></div>
+                    </li>
+                    <li class="nav-item dropdown" id="tin-tuc-dropdown">
+                      <a
+                        href="javascript:void(0)"
+                        class="nav-link"
+                        title="Tin tức"
+                      >
+                        <h6 class="dropdown-toggle">
+                          Tin tức<span>
+                            <img
+                              src="images/icon/chevron-down.svg"
+                              alt="redirect"
+                              class="chevron-header"
+                            />
+                          </span>
+                        </h6>
+                      </a>
+                      <div class="underline"></div>
+                      <ul
+                        class="s-dropdown-menu"
+                        aria-labelledby="tin-tuc-dropdown"
+                      >
+                        <li class="s-dropdown-item">
+                          <a href="https://home.monex.vn/tin-tuc/ban-tin-monex/"
+                            >Bản tin Monex</a
+                          >
+                        </li>
+                        <li class="s-dropdown-item">
+                          <a
+                            href="https://home.monex.vn/tin-tuc/chuyen-nha-monex/"
+                            >Chuyện nhà Monex</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="https://home.monex.vn/hoi-dap/"
+                        class="nav-link"
+                        title="Hỏi đáp"
+                      >
+                        <h6>Hỏi đáp</h6>
+                      </a>
+                      <div class="underline"></div>
+                    </li>
+                    <li class="nav-item dropdown" id="blog-dropdown">
+                      <a
+                        href="javascript:void(0)"
+                        class="nav-link"
+                        title="Tin tức"
+                      >
+                        <h6 class="dropdown-toggle">
+                          Blog
+                          <span>
+                            <img
+                              src="images/icon/chevron-down.svg"
+                              alt="redirect"
+                              class="chevron-header"
+                            />
+                          </span>
+                        </h6>
+                      </a>
+                      <div class="underline"></div>
+                      <ul
+                        class="s-dropdown-menu"
+                        aria-labelledby="blog-dropdown"
+                      >
+                        <li class="s-dropdown-item">
+                          <a
+                            href="https://home.monex.vn/blog/chuyen-dong-thi-truong/"
+                            >Chuyển động thị trường</a
+                          >
+                        </li>
+                        <li class="s-dropdown-item">
+                          <a
+                            href="https://home.monex.vn/blog/xu-huong-dau-tu-cho-ban/"
+                            >Xu hướng đầu tư cho bạn</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 menu-info d-flex justify-content-end"
+                >
+                  <ul
+                    class="nav navbar-nav flex-row flex-nowrap align-items-center float-right"
+                  >
+                    <li class="nav-item">
+                      <a
+                        href="tel:1900234583"
+                        class="nav-link contact me-3"
+                        title="Hỗ trợ"
+                        ><img
+                          src="./images/header/hotline.svg"
+                          alt="icon-contact"
+                        />
+                        <h6 class="mb-0">1900234583</h6>
+                      </a>
+                    </li>
+
+                    <li
+                      class="nav-item"
+                      data-bs-toggle="modal"
+                      data-bs-target="#myModal"
+                    >
+                      <a
+                        href="javascript:void(0)"
+                        class="nav-link header-download"
+                        title="Tải ứng dụng"
+                        ><img
+                          src="./images/header/Download.svg"
+                          alt="icon-download"
+                        />
+                        <h6 class="mb-0">Tải ứng dụng</h6>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <!-- END: Header -->
+
+    <!--    Main -->
+    <main id="m-main">
+      <div class="container-fluid">
+        <div class="m-container">
+          <!-- Information -->
+          <div class="custom-row my-5">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <h4 class="sub-title text-center">Chính sách & Bảo mật</h4>
+            </div>
+          </div>
+          <div class="custom-row content">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <h6 class="content-text">
+                MONEX là nền tảng công nghệ cung cấp các tiện ích mua sắm thông
+                minh qua ứng dụng Monex và website Monex - Mua trước trả sau
+                (Sau đây gọi tắt là “dịch vụ MONEX”). Bằng việc sử dụng công
+                nghệ trí tuệ nhân tạo (AI), Machine Learning (máy học), và Big
+                data (dữ liệu lớn), MONEX cung cấp công cụ để thực hiện một chu
+                trình khép kín, tự động và vô cùng thuận tiện từ dự đoán nhu
+                cầu, đánh giá uy tín, xác minh thông tin, phòng chống gian lận
+                và phân tán rủi ro, qua đó đem lại tiện ích cho mọi người dùng
+                của MONEX trong hoạt động mua sắm.
+                <br /><br />
+                Khi truy cập dịch vụ MONEX để sử dụng các dịch vụ của chúng tôi,
+                bạn xác nhận rằng bạn đã đọc và hiểu các nguyên tắc thu thập và
+                xử lý thông tin cũng như các nội dung liên quan đến việc thu
+                thập và xử lý thông tin được đưa ra trong bản Chính sách về
+                Quyền riêng tư này.
+                <br /><br />
+                Chính sách về Quyền riêng tư này được cập nhật lần cuối vào ngày
+                29 tháng 09 năm 2021. Chúng tôi có thể thay đổi Chính sách này
+                tại các thời điểm khác nhau, do đó bạn vui lòng kiểm tra thường
+                xuyên để nắm rõ và thực hiện đúng mọi cập nhật.
+                <br /><br />
+                Các vấn đề mà bản chính sách này đưa ra với bạn và toàn bộ các
+                người dùng khác của MONEX bao gồm:
+                <br /><br />
+                - MONEX thu thập thông tin gì của bạn
+                <br /><br />
+                - MONEX thu thập thông tin của bạn từ đâu
+                <br /><br />
+                - MONEX sử dụng thông tin của bạn để làm gì
+                <br /><br />
+                - MONEX chia sẻ thông tin của bạn với ai
+                <br /><br />
+                - MONEX lưu trữ thông tin của bạn ở đâu và trong bao lâu
+                <br /><br />
+                - Các quyền và lựa chọn của bạn đối với việc thu thập và sử dụng
+                thông tin của mình
+                <br /><br />
+                - MONEX bảo vệ thông tin của bạn như thế nào
+                <br /><br />
+                - Liên kết bên ngoài
+                <br /><br />
+                - Trường hợp loại trừ
+                <br /><br />
+                - Những thay đổi đối với Chính sách về Quyền riêng tư này
+                <br /><br />
+                - Bạn có thể liên hệ với MONEX bằng cách nào
+                <br /><br />
+                <b>MONEX thu thập thông tin gì của bạn</b>
+                <br /><br />
+                MONEX sẽ thu thập địa chỉ IP và các thông tin điện thoại tiêu
+                chuẩn khác của bạn như: tên thiết bị, địa chỉ GPS v.v… cho mục
+                đích bảo mật và an toàn giao dịch. Nếu bạn sử dụng dịch vụ của
+                MONEX, chúng tôi sẽ yêu cầu bạn cung cấp trung thực và chính xác
+                những thông tin sau: 
+                <br /><br />
+                + <b>Thông tin nhân thân và liên hệ</b> (đối với tổ chức và cá
+                nhân) như: tên, ngày sinh, giới tính, địa chỉ, điện thoại,
+                email, mạng xã hội (Facebook cá nhân), giấy tờ hợp pháp (như
+                chứng minh nhân dân, thẻ căn cước, giấy phép kinh doanh, đăng ký
+                mã số thuế v.v… <br /><br />
+                +
+                <b
+                  >Lịch sử duyệt web và các dữ liệu sử dụng tương tự hoặc liên
+                  quan:</b
+                >
+                <br /><br />
+                ++ Thông tin về loại gói Dịch Vụ mà bạn sử dụng và/hoặc đăng ký
+                sử dụng trên Dịch vụ MONEX; Thông tin về các tương tác của bạn
+                với Dịch Vụ MONEX, như các câu hỏi bạn tìm kiếm (bao gồm cả thời
+                gian và nội dung các câu hỏi bạn, các danh sách bạn tạo lập, thư
+                viện, lịch sử duyệt web, các nội dung từ các người dùng khác
+                trên Dịch vụ MONEX có liên quan đến bạn (như các lượt đánh giá,
+                khiếu nại, kết quả giải quyết khiếu nại…). Thông tin này cũng có
+                thể bao gồm chi tiết về việc bạn sử dụng ứng dụng bên thứ ba có
+                liên quan đến Dịch Vụ MONEX.
+                <br /><br />
+                ++ Nội dung mà bạn đăng trên hoặc gửi yêu cầu tới Dịch vụ MONEX,
+                và các tương tác của bạn với nhân viên của chúng tôi.
+                <br /><br />
+                ++ Thông tin từ thiết bị của bạn: Khi bạn cho phép hệ thống của
+                chúng tôi truy cập vào toàn bộ hay một phần thiết bị của bạn
+                trong quá trình đăng ký và sử dụng dịch vụ, chúng tôi sẽ có thể
+                tiếp cận và thu thập các thông tin của bạn từ thiết bị này trong
+                một chừng mực nào đó thuộc khả năng của chúng tôi;
+                <br /><br />
+                ++ Một số dữ liệu từ thiết bị của bạn: Khi bạn cung cấp Thông
+                tin URL; Các định danh trực tuyến bao gồm dữ liệu cookie và địa
+                chỉ IP; Thông tin các loại thiết bị bạn đang sử dụng như thông
+                tin định danh thiết bị riêng biệt, loại kết nối mạng (ví dụ như
+                wifi, 3G, LTE hay Bluetooth), nhà cung cấp, hiệu suất mạng và
+                thiết bị, loại trình duyệt, ngôn ngữ, các thông tin cho phép
+                quản lý quyền kỹ thuật số, hệ điều hành và phiên bản ứng dụng mà
+                bạn đang sử dụng; Thuộc tính của các thiết bị trên mạng wifi của
+                bạn hiện có để kết nối với Dịch Vụ MONEX.
+                <br /><br />
+                + <b>Thông tin về lịch sử, phương thức thanh toán:</b> Thông tin
+                như số tài khoản ngân hàng, số thẻ ghi nợ hoặc thẻ tín dụng v.v…
+                <br /><br />
+                + <b>Dữ liệu khác:</b> Khi bạn hoàn thành bất kỳ mẫu đơn nào,
+                trả lời khảo sát hoặc bảng câu hỏi… mà chúng tôi đưa ra, tùy
+                thuộc vào tính chất của đơn, khảo sát hoặc bảng câu hỏi riêng
+                biệt mà chúng tôi sẽ thu thập, lưu trữ và xử lý dữ liệu cá nhân
+                của bạn phù hợp với nội dung đơn, khảo sát hoặc bảng câu hỏi đó.
+                Ngoài ra, dữ liệu khác còn bao gồm cả việc xác định vị trí của
+                bạn thông qua thiết bị và/hoặc các địa điểm của bạn khi sử dụng
+                dịch vụ của chúng tôi <br /><br />
+                Ngoài ra, Các cuộc gọi đến và từ MONEX có thể được ghi
+                lại. Chúng tôi có thể sử dụng các ghi âm cuộc gọi để theo dõi
+                dịch vụ khách hàng của mình nhằm mục đích nâng cao chất lượng
+                hoặc tuân thủ, kiểm tra độ chính xác của thông tin mà bạn cung
+                cấp cho chúng tôi nhằm mục đích ngăn chặn gian lận hoặc thực
+                hiện đào tạo cho nhân viên của chúng tôi. Chúng tôi sẽ giữ lại
+                các bản ghi âm cuộc gọi trong thời gian cần thiết hợp lý để thực
+                hiện các hoạt động nêu trên và sau đó sẽ xóa bỏ. Mọi thông tin
+                cá nhân thu thập của bạn trong cuộc gọi sẽ được xử lý theo các
+                điều khoản trong Chính sách về Quyền riêng tư này.
+                <br /><br />
+                Trong một số trường hợp, chúng tôi có thể thu thập thêm thông
+                tin về bạn từ bên thứ ba như ngân hàng, các tổ chức tín dụng và
+                dịch vụ thanh toán, nhà cung cấp dịch vụ mạng v.v… Chúng tôi
+                cũng có thể thu thập thêm các thông tin khác về bạn từ nhiều
+                nguồn và bằng các phương thức khác nhằm đảm bảo chất lượng dịch
+                vụ và phục vụ bạn tốt hơn.
+                <br /><br />
+                <b>MONEX thu thập thông tin của bạn từ đâu</b>
+                <br /><br />
+                Chúng tôi có thể thu thập thông tin về bạn ở nhiều nơi tùy thuộc
+                vào sự cho phép của bạn, trong số đó, các nguồn thông tin đáng
+                kể bao gồm:
+                <br /><br />
+                Thông tin do chính bạn cung cấp khi đăng ký và truy cập sử dụng
+                dịch vụ của chúng tôi. Tùy thuộc vào mức độ sử dụng dịch vụ, các
+                chức năng hoặc các loại dịch vụ bạn yêu cầu chúng tôi phục vụ mà
+                chúng tôi sẽ đề nghị bạn cung cấp các loại thông tin khác nhau.
+                Các loại thông tin đó cụ thể sẽ được đề nghị tại thời điểm bạn
+                đăng ký hoặc truy cập sử dụng dịch vụ của chúng tôi.
+                <br /><br />
+                Thông tin từ nguồn tham chiếu, trong quá trình đăng ký và sử
+                dụng dịch vụ bạn có thể sẽ được yêu cầu cung cấp một vài nguồn
+                tham chiếu thông tin (bạn bè, người trong gia đình, đồng
+                nghiệp…) nhằm mục đích xác minh các thông tin mà bạn cung cấp
+                cho chúng tôi là chính xác. Do đó, bạn cũng xác nhận và đảm bảo
+                rằng chúng tôi được phép thực hiện các hình thức liên lạc như
+                cuộc gọi, nhắn tin, gửi email hoặc bất cứ phương thức liên lạc
+                nào khác mà chúng tôi cho rằng có hiệu quả để liên lạc với nguồn
+                tham chiếu thông tin mà bạn đã cung cấp. Ngoài ra, bạn cũng xác
+                nhận rằng chúng tôi có thể thu thập và lưu trữ thông tin về bạn
+                từ các nguồn tham chiếu này nhằm mục đích cung cấp dịch vụ cho
+                bạn được chính xác và hiệu quả hơn.
+                <br /><br />
+                Tài khooản của bên thứ ba, nếu bạn đăng ký tài khoản, đăng nhập
+                hoặc truy cập vào sử dụng dịch vụ của chúng tôi từ tài khoản của
+                một bên thứ ba (ví dụ như facebook, google hoặc các dịch vụ
+                thương mại điện tử…), chúng tôi sẽ thu thập thông tin của bạn từ
+                bên thứ ba đó để giúp định danh tài khoản của bạn trên dịch vụ
+                của chúng tôi. Mặc dù các thông tin mà chúng tôi thu thập được
+                trong trường hợp này sẽ được căn cứ trên chính sách về quyền
+                riêng tư của bên thứ ba đó đang áp dụng với bạn, tuy nhiên, bạn
+                cũng xác nhận rằng bạn sẽ thực hiện các thao tác cần thiết để
+                chúng tôi có thể tiếp cận, thu thập và lưu trữ lại lượng thông
+                tin tối thiểu đủ để chúng tôi có thể cung cấp dịch vụ cho bạn
+                như cho các Người dùng khác của chúng tôi.
+                <br /><br />
+                Các nhà cung cấp dịch vụ, chúng tôi cũng có thể nhận thông tin
+                về bạn từ các đối tác dịch vụ kỹ thuật, các đối tác cung cấp
+                dịch vụ thanh toán, đối tác quảng cáo, đơn vị cung cấp dịch vụ
+                phát triển khách hàng hoặc bất cứ đối tác nào có hợp tác, liên
+                kết với chúng tôi nhằm mục đích cung cấp dịch vụ tốt hơn tới
+                bạn.
+                <br /><br />
+                <b>MONEX sử dụng thông tin của bạn để làm gì</b>
+                <br /><br />
+                Mục tiêu cao nhất của chúng tôi là cung cấp một dịch vụ an toàn,
+                tiện lợi, hiệu quả và liên tục cải tiến. Vì vậy chúng tôi sẽ
+                dùng thông tin cá nhân của bạn để:
+                <br /><br />
+                Cung cấp các dịch vụ hỗ trợ và chăm sóc khách hàng.
+                <br /><br />
+                Thực hiện các yêu cầu sử dụng dịch vụ của bạn gửi tới MONEX và
+                gửi các thông báo trong quá trình giao dịch.
+                <br /><br />
+                Ngăn chặn các hành vi có nguy cơ rủi ro, bị cấm hoặc bất hợp
+                pháp và đảm bảo tuân thủ đúng chính sách “Điều khoản sử dụng”.
+                <br /><br />
+                Đo đạc, tùy biến và cải tiến dịch vụ, nội dung và hình thức của
+                dịch vụ.
+                <br /><br />
+                Gửi bạn các thông tin về chương trình Marketing, các thông báo
+                và chương trình khuyến mại.
+                <br /><br />
+                So sánh độ chính xác của thông tin cá nhân của bạn trong quá
+                trình kiểm tra với bên thứ ba.
+                <br /><br />
+                Phục vụ quá trình đánh giá uy tín và phê duyệt yêu cầu tham gia
+                sử dụng dịch vụ của MONEX.
+                <br /><br />
+                <b>MONEX chia sẻ thông tin của bạn với ai</b>
+                <br /><br />
+                Để thực hiện giao dịch trên MONEX, chúng tôi phải chia sẻ một số
+                thông tin cá nhân của bạn với những cá nhân hoặc tổ bao gồm:
+                <br /><br />
+                <b>Các nhà cung cấp,</b> bao gồm nhưng không giới hạn đối với
+                các nhà cung cấp dịch vụ trung gian thanh toán, các nhà cung cấp
+                dịch vụ quảng cáo, tư vấn và phát triển khách hàng, phân tích
+                kinh doanh, ngăn chặn gian lận…. Chúng tôi cũng có thể ủy quyền
+                cho các nhà cung cấp là bên thứ ba thu thập thông tin thay mặt
+                cho chúng tôi khi cần thiết để điều hành các tính năng trên dịch
+                vụ MONEX hoặc để tạo điều kiện cho việc thực hiện quảng cáo trực
+                tuyến phù hợp theo sở thích của bạn. Các nhà cung cấp là bên thứ
+                ba có quyền truy cập và chỉ có thể thu thập thông tin khi cần
+                thiết để thực hiện các chức năng của họ và họ không được phép
+                chia sẻ hay sử dụng thông tin cho bất kỳ mục đích nào khác.
+                <br /><br />
+                <b
+                  >Các cá nhân hoặc tổ chức mà bạn lựa chọn giao dịch thông qua
+                  MONEX,</b
+                >
+                là những người cung cấp dịch vụ hoặc người sử dụng dịch vụ (tùy
+                từng hoàn cảnh cụ thể) để hai bên có thể tương tác và trao đổi
+                với nhau nhằm mục đích thực hiện các giao dịch mà hai bên mong
+                muốn. Bạn sẽ được hỏi trước và có quyền chấp nhận hoặc từ chối
+                cung cấp thông tin cho bên thứ ba này. Trong trường hợp bạn từ
+                chối cung cấp thông tin, giao dịch giữa bạn bà bên thứ ba bị hủy
+                bỏ và bạn có thể phải chịu một số trách nhiệm nhất định theo sự
+                chấp thuận trước đó của chính bạn.
+                <br /><br />
+                <b>Kênh thông tin điện tử hoặc ứng dụng liên kết,</b> Nếu bạn
+                được chuyển đến MONEX từ một trang thông tin điện tử hoặc một
+                ứng dụng khác, chúng tôi có thể chia sẻ thông tin đăng ký của
+                bạn, chẳng hạn như tên, địa chỉ thư điện tử, địa chỉ gửi thư, số
+                điện thoại và sở thích tiêu dùng của bạn với kênh thông tin điện
+                tử chuyển đến đó. Chúng tôi không đặt ra giới hạn đối với việc
+                sử dụng thông tin cá nhân của kênh thông tin điện tử chuyển đến
+                và chúng tôi khuyến khích bạn xem xét chính sách quyền riêng tư
+                của mọi kênh thông tin điện tử mà bạn truy cập. <br /><br />
+                <b>Các công ty thuộc tập đoàn của chúng tôi,</b> chúng tôi có
+                thể chia sẻ thông tin cá nhân của bạn trong nội bộ các công ty
+                thuộc MONEX hoặc công ty mẹ hoặc các công ty có cùng công ty mẹ
+                với MONEX. Việc chia sẻ này cho phép chúng tôi cung cấp cho bạn
+                thông tin về sản phẩm và dịch vụ liên quan đến nhu cầu sử dụng
+                của bạn và nội dung khác mà có thể thu hút sự quan tâm của bạn
+                dựa trên tùy chọn/sở thích nhận tiếp thị của bạn. Trong chừng
+                mực công ty mẹ và các công ty liên kết của chúng tôi có quyền
+                truy cập vào thông tin của bạn, họ sẽ tuân theo các nguyên tắc
+                có mức độ giới hạn ít nhất là tương tự với các nguyên tắc được
+                mô tả trong Chính sách Quyền riêng tư này. Họ cũng sẽ tuân thủ
+                các luật áp dụng quy định việc truyền các thông tin quảng cáo và
+                tối thiểu, cho bạn cơ hội lựa chọn nhận hoặc không nhận thư điện
+                tử thương mại mà họ gửi trong tương lai. <br /><br />
+                <b>Cổ đông, người đang thỏa thuận để mua lại cổ phần,</b> nhằm
+                mục đích mô tả, thuyết trình hoặc các báo cáo về hoạt động kinh
+                doanh, chúng tôi cũng có thể sẽ cung cấp thông tin của bạn trong
+                các bài mô tả, thuyết trình hoặc báo cáo đó để làm bằng chứng
+                chứng minh về hiệu quả kinh doanh của mình với các cổ đông hoặc
+                người đang trong quá trình thỏa thuận để mua lại cổ phần của
+                chúng tôi. <br /><br />
+                <b>Nhân viên và người quản lý,</b>
+                chúng tôi cho phép nhân viên và người quản lý hoạt động kinh
+                doanh của mình được phép tiếp cận thông tin cá nhân của bạn nhằm
+                mục đích vận hành hoạt động kinh doanh của Dịch vụ MONEX, đương
+                nhiên, các nhân viên và người quản lý này sẽ nhận được các yêu
+                cầu cần thiết về việc không tự ý cung cấp thông tin của bạn ra
+                bên ngoài khi không được sự cho phép của bạn.
+                <br /><br />
+                <b>Các cơ quan nhà nước có thẩm quyền,</b> chúng tôi có thể sẽ
+                cung cấp thông tin của bạn khi có yêu cầu bằng văn bản của các
+                cơ quan nhà nước có thẩm quyền để tuân thủ/thực hiện các giấy
+                triệu tập, lệnh của tòa án hợp pháp và buộc thực thi hoặc các
+                thủ tục tố tụng khác; để thiết lập hoặc thực thi các quyền hợp
+                pháp của chúng tôi; để biện hộ trước các khiếu nại pháp lý; hoặc
+                theo quy định khác của luật pháp. Trong những trường hợp đó,
+                chúng tôi có quyền đưa ra hoặc từ bỏ mọi phản đối hoặc quyền mà
+                chúng tôi có thể thực hiện theo quy định của pháp luật. Ngoài
+                ra, để điều tra, ngăn chặn hoặc thực hiện hành động đối với các
+                hoạt động phi pháp hoặc bị nghi ngờ là phi pháp; để bảo vệ và
+                biện hộ cho các quyền, tài sản hoặc sự an toàn của chúng tôi,
+                khách hàng của chúng tôi hoặc các đối tượng khác; và có liên
+                quan đến Điều khoản sử dụng và các thỏa thuận khác của chúng
+                tôi, chúng tôi cũng có thể cung cấp thông tin của bạn theo cách
+                thức của mục này. <br /><br />
+                <b>Để phục vụ các nhu cầu của bạn trên MONEX,</b> nếu bạn chọn
+                tạo một hồ sơ cá nhân trên MONEX, một số thông tin nhất định
+                trong hồ sơ của bạn sẽ có thể xem được công khai và có thể nhận
+                dạng khi nhấp vào tên hiển thị của bạn. Bạn có thể xem hồ sơ của
+                mình như những người khác. <br /><br />
+                Ngoài những điều đã trình bày ở trên, trong những trường hợp đặc
+                biệt khác, bạn sẽ được thông báo khi thông tin cá nhân của bạn
+                được chia sẻ với bên thứ ba và bạn sẽ có cơ hội lựa chọn không
+                cho phép chúng tôi chia sẻ thông tin đó. <br /><br />
+                <b>MONEX lưu trữ thông tin của bạn ở đâu và trong bao lâu</b>
+                <br /><br />
+                Nơi lưu trữ thông tin: Chúng tôi lưu trữ và xử lý thông tin cá
+                nhân của bạn tại các máy chủ đặt tại Việt Nam.
+                <br /><br />
+                Thời hạn lưu trữ thông tin: Tính chất của từng loại thông tin và
+                thời gian hoạt động của bạn trên MONEX sẽ quyết định thời hạn mà
+                MONEX sẽ lưu trữ thông tin cá nhân của bạn. Tuy nhiên, chúng tôi
+                sẽ lưu trữ thông tin cá nhân của bạn trong thời gian tối thiểu
+                là 2 năm và tối đa cho tới khi việc lưu trữ đó còn cần thiết để
+                phục vụ cho hoạt động cung cấp dịch vụ của chúng tôi tới bạn.
+                <br /><br />
+                <b
+                  >Các quyền và lựa chọn của bạn đối với việc thu thập và sử
+                  dụng thông tin của mình</b
+                >
+                <br /><br />
+                Bạn có thể lựa chọn không cung cấp cho chúng tôi thông tin cá
+                nhân của bạn mặc dù điều này có thể là cần thiết để tối ưu việc
+                sử dụng các số tính năng nhất định được cung cấp trên dịch vụ
+                MONEX.
+                <br /><br />
+                Bạn có quyền kiểm tra để biết chúng tôi lưu giữ thông tin cá
+                nhân nào về bạn bằng cách đọc kỹ bản chính sách quyền riêng tư
+                này. Chúng tôi luôn nỗ lực để đảm bảo thông tin cá nhân của bạn
+                phù hợp với mục đích sử dụng, chính xác và đầy đủ. Bạn cũng có
+                thể xem lại, bổ sung hoặc cập nhật thông tin mà bạn đã cung cấp
+                cho chúng tôi bằng cách truy cập trang đăng ký của bạn trên dịch
+                vụ MONEX của chúng tôi.
+                <br /><br />
+                Bạn cũng có thể bổ sung hoặc cập nhật thông tin và đóng tài
+                khoản của mình theo chính sách về tài khoản của MONEX. Nếu bạn
+                quyết định đóng tài khoản tại MONEX, chúng tôi sẽ hủy kích hoạt
+                tài khoản của bạn và xóa thông tin hồ sơ của bạn khỏi giao diện
+                trực tuyến. Xin lưu ý rằng sau khi đóng tài khoản, bạn sẽ không
+                thể đăng nhập hay truy cập bất kỳ thông tin cá nhân nào của
+                mình.
+                <br /><br />
+                Xin lưu ý rằng chúng tôi có thể gửi cho bạn các thông tin thông
+                qua phương tiện liên lạc khác, bao gồm thông báo về dịch vụ, thư
+                quản trị liên quan đến tài khoản trên MONEX của bạn.
+                <br /><br />
+                <b>MONEX bảo vệ thông tin của bạn như thế nào</b>
+                <br /><br />
+                Chúng tôi muốn bạn cảm thấy an tâm khi sử dụng dịch vụ MONEX và
+                chúng tôi cam kết bảo vệ thông tin mà chúng tôi thu thập. Để
+                thực hiện nội dung này, chúng tôi duy trì các biện pháp vật lý,
+                quản trị, kỹ thuật và tổ chức thích hợp nhằm bảo vệ thông tin cá
+                nhân mà bạn cung cấp cho chúng tôi trước mọi hành vi truy cập,
+                sử dụng trái phép hoặc bất hợp pháp thông tin được tiết lộ và
+                trước nguy cơ mất mát, hư hại, thay đổi hoặc phá hủy ngẫu nhiên.
+                Ví dụ: chỉ những nhân viên được ủy quyền mới được phép truy cập
+                thông tin cá nhân và họ chỉ có thể làm như vậy để phục vụ cho
+                các chức năng công việc đã được cho phép. Ngoài ra, chúng tôi sử
+                dụng công nghệ mã hóa khi truyền thông tin cá nhân của bạn giữa
+                hệ thống của bạn và hệ thống của chúng tôi và giữa hệ thống của
+                chúng tôi với hệ thống của các bên mà chúng tôi chia sẻ thông
+                tin. Đồng thời, chúng tôi sử dụng tường lửa và các hệ thống phát
+                hiện xâm nhập để ngăn chặn các cá nhân không được ủy quyền truy
+                cập thông tin của bạn. Ngoài ra, chúng tôi cũng áp dụng các biện
+                pháp sau đây:
+                <br /><br />
+                <b>Thời gian chờ của phiên giao dịch</b>
+                <br /><br />
+                Chúng tôi áp dụng quy tắc hết giờ tương tác để bảo vệ tài khoản
+                của bạn. Bạn sẽ tự động đăng xuất khỏi MONEX sau một khoảng thời
+                gian không hoạt động. Điều này làm giảm nguy cơ người khác có
+                thể truy cập vào tài khoản của bạn nếu bạn quên hoặc không giám
+                sát được thiết bị của bạn.
+                <br /><br />
+                <b>Mật khẩu</b>
+                <br /><br />
+                Bạn không bao giờ nên chia sẻ mật khẩu của mình với bất kỳ ai.
+                Không một nhân viên nào của MONEX hay của bên thứ ba được biết
+                mật khẩu của bạn và chúng tôi sẽ không bao giờ yêu cầu mật khẩu
+                của bạn qua điện thoại hoặc email. Nếu bạn đã từng nhận được một
+                thông tin tuyên bố từ MONEX yêu cầu mật khẩu của bạn, bạn nên
+                báo cáo ngay bằng cách liên hệ với chúng tôi theo địa chỉ
+                <a href="mailto:support@MONEX.vn" subject="subject text"
+                  >support@MONEX.vn</a
+                >
+                <br /><br />
+                <b>Chống trộm</b>
+                <br /><br />
+                Chúng tôi đã phát triển và triển khai chương trình chống trộm để
+                phát hiện, ngăn chặn và giảm thiểu hành vi đánh cắp thông tin
+                khi giao dịch thông qua MONEX. Chúng tôi sử dụng công nghệ xác
+                thực để xác minh danh tính của người dùng. Chúng tôi đã thiết
+                lập quy trình, thủ tục và đào tạo cho nhân viên của MONEX để
+                nhận dạng và có ứng xử phù hợp với kẻ đánh cắp nhận dạng. Theo
+                thỏa thuận của chúng tôi với người dùng, chúng tôi có nghĩa vụ
+                chia sẻ rủi ro với các giao dịch được thực hiện thông qua MONEX
+                trong trường hợp xác nhận hành vi đánh cắp nhận dạng khách hàng.
+                Ngoài ra, chúng tôi sẽ làm việc với các cơ quan thực thi pháp
+                luật thích hợp để theo dõi và truy tố bất kỳ ai đã phạm tội đánh
+                cắp danh tính trên MONEX.
+                <br /><br />
+                <b>Liên kết bên ngoài</b>
+                <br /><br />
+                Dịch vụ MONEX của chúng tôi có thể bao gồm liên kết đến các kênh
+                thông tin điện tử của bên thứ ba. Nếu bạn truy cập kênh thông
+                tin điện tử khác từ các liên kết được cung cấp trên dịch vụ
+                MONEX, nhà điều hành của các kênh thông tin điện tử đó có thể
+                thu thập thông tin của bạn và sử dụng thông tin đó theo chính
+                sách quyền riêng tư của họ mà có thể khác với Chính sách Quyền
+                riêng tư của chúng tôi. Chúng tôi khuyến khích bạn nên kiểm tra
+                các tuyên bố về quyền riêng tư đăng trên các trang thông tin
+                điện tử khác đó để hiểu được thủ tục thu thập, sử dụng và tiết
+                lộ thông tin cá nhân của họ.
+                <br /><br />
+                <b>Trường hợp loại trừ</b>
+                <br /><br />
+                Ngoại trừ ứng dụng/website riêng của MONEX tại một số thị trường
+                mà người dưới 18 tuổi được pháp luật của họ quy định là đã đủ
+                tuổi thành niên, Dịch Vụ MONEX không cấp quyền đăng ký tài khoản
+                cho trẻ em dưới 18 tuổi hoặc những người bị hạn chế năng lực
+                hành vi theo quy định của pháp luật – những người mà mà việc xử
+                lý dữ liệu cá nhân của họ là bất hợp pháp, hoặc yêu cầu phải có
+                chấp thuận của người giám hộ theo pháp luật quốc gia mà người đó
+                là công dân (sau đây gọi tắt là <b>“Đối tượng hạn chế”</b>).
+                <br /><br />
+                Chúng tôi không chủ ý thu thập dữ liệu cá nhân của người thuộc
+                đối tượng Hạn Chế, vui lòng không đăng ký tài khoản Dịch Vụ
+                MONEX và không cung cấp bất kỳ dữ liệu cá nhân nào cho chúng
+                tôi. Nếu bạn là cha hoặc mẹ hoặc người giám hộ của người thuộc
+                Đối tượng hạn chế và biết được rằng người thuộc Đối tượng hạn
+                chế mà bạn giám hộ đã cung cấp dữ liệu cá nhân cho MONEX, vui
+                lòng liên hệ với chúng tôi để được hỗ trợ và xóa bỏ các thông
+                tin này cũng như chấm dứt việc sử dụng Dịch vụ MONEX.
+                <br /><br />
+                Nếu chúng tôi biết được rằng chúng tôi đã thu thập dữ liệu cá
+                nhân của người thuộc Đối tượng hạn chế, chúng tôi sẽ thực hiện
+                các bước hợp lý để xóa các dữ liệu cá nhân này. Điều này có thể
+                buộc chúng tôi phải xóa tài khoản MONEX của người đó.
+                <br /><br />
+                <b>Thay đổi Chính Sách này</b>
+                <br /><br />
+                Tại những thời điểm khác nhau, chúng tôi có thể thay đổi Chính
+                Sách này mà không cần tham khảo trước ý kiến của người dùng.
+                <br /><br />
+                Khi chúng tôi thay đổi đáng kể Chính Sách này, chúng tôi sẽ cung
+                cấp cho bạn thông báo hiển thị nổi bật phù hợp cho từng trường
+                hợp, ví dụ, bằng việc hiển thị thông báo nổi bật trên Dịch Vụ
+                MONEX hoặc gửi cho bạn email và/hoặc thông báo trên thiết bị. Do
+                đó, vui lòng đảm bảo rằng bạn đọc kỹ các thông báo nêu trên. Nếu
+                bạn từ chối việc áp dụng các quy định mới, bạn có thể dừng việc
+                sử dụng dịch vụ của chúng tôi, nếu bạn tiếp tục sử dụng dịch vụ,
+                bạn đương nhiên đã chấp thuận với các quy định mới của bản Chính
+                sách về Quyền riêng tư này.
+                <br /><br />
+                <b>Bạn có thể liên hệ với chúng tôi bằng cách nào</b>
+                <br /><br />
+                Nếu bạn có câu hỏi về Chính sách về Quyền riêng tư này, vui lòng
+                liên hệ với chúng tôi tại địa chỉ:
+                <br /><br />
+                - Công ty: cổ phần Monex, Tầng 17, Tòa Gleximco, 36 Hoàng Cầu,
+                Đống Đa, Hà Nội
+                <br /><br />
+                - Địa chỉ ĐKKD: Tầng 17 Tòa Geleximco, 36 Hoàng Cầu, Đống Đa, Hà
+                Nội
+                <br /><br />
+                - Địa chỉ liên hệ: Tầng 5, Tòa nhà 389 Đê La Thành, Ba Đình, Hà
+                Nội
+                <br /><br />
+                - Email: support@monex.vn
+                <br /><br />
+                - Hotline: 1900 234 581
+              </h6>
+            </div>
+          </div>
+          <!-- Button Submit -->
+          <div class="custom-row text-center py-5">
+            <div
+              class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center"
+            >
+              <a href="/" type="button" class="m-btn m-btn-primary m-features">
+                Trở về trang chủ
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--   Footer   -->
+    <div class="m-footer container-fluid">
+      <div class="m-sub-email">
+        <input
+          type="email"
+          id="email"
+          name="email-receive"
+          pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+          title="Hãy nhập email của bạn"
+          required
+          placeholder="Email nhận thông báo ưu đãi ..."
+        />
+        <button type="button" id="receive-noti">Nhận thông báo</button>
+      </div>
+
+      <div class="m-logo">
+        <div class="m-logo-img">
+          <span><img src="./images/icon/Logo-Monex.svg" alt="" /></span>
+        </div>
+        <div class="m-logo-title">
+          <span class="logo-description"
+            >Nền tảng công nghệ kiến tạo phong cách mua sắm thông minh</span
+          >
+        </div>
+      </div>
+
+      <div class="m-about-me-container">
+        <div class="m-about-me">
+          <div class="m-step-social">
+            <div class="m-about-text">
+              <div class=""><span>Kết nối với Monex</span></div>
+            </div>
+
+            <div class="m-social-icon">
+              <div>
+                <a
+                  href="https://www.facebook.com/monexvn/"
+                  target="_blank"
+                  rel="noopener"
+                  ><img src="./images/icon/Facebook.svg" alt=""
+                /></a>
+              </div>
+<!--              <div>-->
+<!--                <a-->
+<!--                  href="https://zalo.me/2848902721585176437"-->
+<!--                  target="_blank"-->
+<!--                  rel="noopener"-->
+<!--                  ><img src="./images/icon/Zalo.svg" alt=""-->
+<!--                /></a>-->
+<!--              </div>-->
+<!--              <div>-->
+<!--                <a-->
+<!--                  href="https://www.youtube.com/channel/UC92hkaZycui0Wd4GUrhSL8A"-->
+<!--                  target="_blank"-->
+<!--                  rel="noopener"-->
+<!--                  ><img src="./images/icon/Youtube.svg" alt=""-->
+<!--                /></a>-->
+<!--              </div>-->
+<!--              <div>-->
+<!--                <a href="javascript:void(0)" target="_blank" rel="noopener"-->
+<!--                  ><img src="./images/icon/Linkedin.svg" alt=""-->
+<!--                /></a>-->
+<!--              </div>-->
+              <div>
+                <a
+                  href="https://www.tiktok.com/@monexvn"
+                  target="_blank"
+                  rel="noopener"
+                  ><img src="./images/icon/Tiktok.svg" alt=""
+                /></a>
+              </div>
+            </div>
+
+            <div class="m-connect-email">
+              <span class="m-about-text">Email</span>
+              <span class="m-email-title">support@monex.vn</span>
+            </div>
+          </div>
+
+          <div class="m-step-about-me">
+            <div class="m-about-text">
+              <div class="m-text-list"><span>Danh mục</span></div>
+            </div>
+
+            <div class="m-about-me-list">
+              <div class="m-list-item">
+                <a href="https://home.monex.vn/gioi-thieu/"
+                  ><span>Về Monex</span></a
+                >
+              </div>
+              <div class="m-list-item">
+                <a href="javascript:void(0)"><span>Mua sắm</span></a>
+              </div>
+              <div class="m-list-item">
+                <a href="hop-tac.html"><span>Hợp tác</span></a>
+              </div>
+              <div class="m-list-item">
+                <a href="https://home.monex.vn/tin-tuc/"
+                  ><span>Tin tức</span></a
+                >
+              </div>
+              <div class="m-list-item">
+                <a href="https://home.monex.vn/hoi-dap/"
+                  ><span>Hỏi đáp</span></a
+                >
+              </div>
+              <div class="m-list-item">
+                <a href="https://home.monex.vn/blog/"><span>Blog</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-step-download">
+            <div class="m-about-text">
+              <div class="m-text-list"><span>Tải ứng dụng Monex</span></div>
+            </div>
+
+            <div class="m-download-app">
+              <div class="m-download-qr">
+                <img src="./images/footers/qrcode-app.png" alt="" />
+              </div>
+
+              <div class="m-download-store">
+                <div class="m-appstore">
+                  <a
+                    href="https://apps.apple.com/app/monex/id1548427331"
+                    target="_blank"
+                    rel="noopener"
+                    ><img src="./images/footers/Appstore.png" alt=""
+                  /></a>
+                </div>
+                <div class="m-ggplay">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.epayvn.monex"
+                    target="_blank"
+                    rel="noopener"
+                    ><img src="./images/footers/Google-Play.png" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-footer-policy">
+        <div class="m-policy-content">
+          <div class="m-policy-title">
+            <span>Tuyên bố từ chối trách nhiệm</span>
+          </div>
+          <div class="m-policy-desc">
+            <span
+              >MONEX là một công ty công nghệ, cung cấp giải pháp đáp ứng nhu
+              cầu mua sắm của người dùng. MONEX có thể kết nối với các nhà cung
+              cấp dịch vụ thanh toán, giao hàng... để gia tăng tiện ích cho bạn
+              khi thực hiện các hoạt động mua sắm. Chúng tôi không trực tiếp
+              cung cấp các dịch vụ gia tăng tiện ích nêu trên, và cũng không
+              cung cấp dịch vụ tín dụng hoặc dịch vụ ngân hàng. Do đó, khi bạn
+              lựa chọn sử dung bất cứ dịch vụ nào được cung cấp bởi các bên thứ
+              ba đó, chúng tôi sẽ không chịu trách nhiệm đối với chất lượng sản
+              phẩm/dịch vụ mà họ cung cấp cho bạn cũng như các tranh chấp giữa
+              bạn và các nhà cung cấp đó.</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="m-footer-content">
+        <div class="m-sub-info">
+          <div class="m-sub-info-title">
+            <div class="m-info-company">
+              <span
+                >Địa chỉ liên hệ: Công ty cổ phần Monex, Tầng 5, Tòa nhà 389 Đê
+                La Thành, Ba Đình, Hà Nội</span
+              >
+            </div>
+            <div class="m-info-policy-terms">
+              <span>
+                <a class="text-decoration-none" href="dieu-khoan-su-dung.html"
+                  >Điều khoản & Điều kiện sử dụng</a
+                >
+              </span>
+              <span>
+                <a class="text-decoration-none" href="javascript:void(0)"
+                  >Chính sách & Bảo mật</a
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--   End Footer   -->
+  </body>
+</html>

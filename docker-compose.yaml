@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  dev:
+    container_name: monex-homepage-site
+#    command: -c "tail -f /dev/null"
+#    entrypoint: /bin/sh
+    image: monex-homepage-site
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "8000:8000"
+    networks:
+      - nesjs-network
+    restart: unless-stopped
+
+networks:
+  nesjs-network:

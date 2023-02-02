@@ -1,0 +1,495 @@
+@import "../variables";
+.m-footer {
+  background-color: #0a0a66;
+  max-width: 100%;
+  height: auto;
+}
+
+.m-sub-email {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.1);
+}
+
+.m-sub-email input {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 40px;
+  border: none;
+  width: 432px;
+  height: 40px;
+}
+
+.m-sub-email input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  padding-left: 44px;
+  display: flex;
+  align-items: center;
+  outline: none;
+}
+
+input[type="email"] {
+  color: #ffffff;
+}
+
+.m-sub-email::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#email {
+  background-image: url(/images/icon/Mail.svg);
+  background-repeat: no-repeat;
+  background-position: 17.67px;
+}
+
+.m-sub-email button {
+  font-family: $sfPro;
+  background: #2aac7e;
+  border-radius: 40px;
+  width: 160px;
+  height: 40px;
+  border: none;
+  margin-left: 8px;
+  outline: none;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.m-sub-email button:hover {
+  background: #2aac7e;
+}
+
+.m-sub-email a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.m-sub-email a:hover {
+  color: #ffffff;
+}
+
+.m-logo {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 1140px;
+}
+
+.m-logo-title {
+}
+
+.logo-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.m-logo img {
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  margin-right: 48px;
+}
+
+.m-about-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.m-step-social {
+  margin-bottom: 31px;
+  height: 177px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  justify-content: space-between;
+}
+
+.m-social-icon > div {
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+}
+
+.m-social-icon {
+  max-width: 304px;
+  display: flex;
+  /*justify-content: space-between;*/
+}
+
+.m-connect-email {
+  display: flex;
+  flex-direction: column;
+}
+
+.m-about-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1px;
+  color: #ffffff;
+}
+
+.m-about-text > div {
+  margin-top: 17px;
+}
+
+.m-email-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.m-step-about-me {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  height: 208px;
+  width: 100%;
+}
+
+.m-text-list {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.m-about-me-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+}
+
+.m-about-me-list a {
+  text-decoration: none;
+}
+
+.m-list-item {
+  height: 18px;
+  margin-bottom: 8px;
+}
+
+.m-list-item:last-child {
+  margin-bottom: 0px;
+}
+
+.m-about-me-list span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.m-step-download {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  height: 196px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.m-download-app {
+  display: flex;
+}
+
+.m-download-qr {
+  margin-right: 16px;
+  background: #ffffff;
+  border-radius: 12px;
+  width: 136px;
+  height: 136px;
+  padding: 14px;
+}
+
+.m-download-store {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.m-footer-policy {
+  max-width: 100%;
+  margin-top: 40px;
+}
+
+.m-policy-content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 100%;
+  max-width: 1140px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.m-policy-content span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.m-policy-title {
+  height: 18px;
+  max-width: 100%;
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+
+.m-policy-desc {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.m-footer-content {
+  display: flex;
+  max-width: 100%;
+}
+
+.m-footer-content span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.m-footer-content a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.m-sub-info {
+  width: 100%;
+  max-width: 1140px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: auto;
+}
+
+.m-sub-info-title {
+  display: flex;
+  padding: 16px 0;
+  justify-content: space-between;
+}
+
+.m-info-company {
+  align-content: center;
+}
+
+.m-info-policy-terms {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.m-info-policy-terms span:first-child {
+  margin-right: 114px;
+}
+
+.m-info-policy-terms span:last-child {
+  margin-right: 0px;
+}
+
+.m-contact-text {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 48px;
+}
+
+.m-checkmark-item {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.m-checkmark > div:last-child {
+  margin-bottom: 0px;
+}
+
+.m-btn-adv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 42.67px;
+  margin-bottom: 104px;
+}
+
+.m-appstore img {
+  max-width: 200px;
+}
+
+.m-ggplay img {
+  max-width: 200px;
+}
+
+@media screen and (max-width: $tablet-width) {
+  .m-footer {
+    height: auto;
+  }
+
+  .m-sub-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .m-sub-email input {
+    max-width: 100%;
+    height: 40px;
+    margin-bottom: 8px;
+  }
+
+  .m-sub-email button {
+    width: 100%;
+    height: 40px;
+    margin-left: 0px;
+  }
+
+  .m-logo {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 16px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .m-logo img {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+
+  .logo-description {
+    font-size: 20px !important;
+  }
+
+  .m-about-me {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .m-step-social {
+    height: auto;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+
+  .m-step-about-me {
+    height: auto;
+  }
+
+  .m-about-text > div {
+    margin-bottom: 16px;
+  }
+
+  .m-social-icon {
+    margin-bottom: 24px;
+  }
+
+  .m-connect-email span:first-child {
+    margin-bottom: 8px;
+  }
+
+  .m-text-list {
+    margin-top: 16px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .m-about-me-list {
+    margin-bottom: 24px;
+  }
+
+  .m-download-app {
+    width: 100%;
+  }
+
+  .m-step-download {
+    height: auto;
+    margin-bottom: 24px;
+  }
+
+  .m-download-store {
+    flex-direction: row;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .m-download-store img {
+    max-width: 167px;
+    max-height: 48px;
+  }
+
+  .m-download-qr {
+    display: none;
+  }
+
+  .m-footer-content {
+    margin-top: 0px;
+    height: auto;
+  }
+
+  .m-sub-info {
+    height: auto;
+  }
+
+  .m-info-company {
+    align-items: flex-start;
+  }
+
+  .m-sub-info-title {
+    flex-direction: column;
+  }
+
+  .m-info-policy-terms {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .m-info-policy-terms span:first-child {
+    margin: 16px 0;
+  }
+
+  .m-footer-policy {
+    height: auto;
+    /*display: none;*/
+    margin-top: 0px;
+  }
+
+  .m-btn-adv {
+    margin-bottom: 32px;
+  }
+}
